@@ -1,0 +1,14 @@
+<div class="js-edit-placeholder-wrapper"
+    {{#name_position_inside}} style="display:none"{{/name_position_inside}}
+    {{#is_system_mask}} style="display:none"{{/is_system_mask}}
+    {{#is_custom_mask}} style="display:none"{{/is_custom_mask}}
+    >
+	<div class="amoforms__fields__edit__descr amoforms__fields__edit__descr-placeholder">Placeholder</div>
+	<input
+		type="text"
+		class="amoforms__text-input amoforms__fields__edit__input"
+		name="field[placeholder]"
+		title="Placeholder"
+		value="{{field.placeholder}}"
+		>
+</div>

@@ -1,0 +1,202 @@
+
+<div class="amoforms__fields__row full button_modal_constructor" {{^active}}style="display: none;{{/active}}">
+        <div class="amoforms__fields__row-view">
+            <button class="amoforms__fields__row__submit amoforms_modal_button">{{text}}</button>
+
+            <div class="amoforms__fields__editor__row__actions input_buttons">
+                <span class="amoforms__fields__editor__row__actions__action amoforms__fields__editor__row__actions__action-edit" data-text="Edit">Edit</span>
+            </div>
+            <div class="amoforms__settings_modal__editor__row__actions input_buttons">
+                <span class="amoforms__fields__editor__row__actions__action amoforms__fields__editor__row__actions__action-edit" data-action="edit">Edit</span>
+                                    <span class="amoforms__settings_hint amoforms__form_settings_hint tooltip-form-settings tooltipstered"
+                                          data-action="hint"
+                                          title="Modal window with your form opens when visitor of your site press the button. You can place button in every place on your web page using the same shortcode as for classic form view.">
+                                    </span>
+            </div>
+        </div>
+
+        <div class="amoforms__styles__edit-modal" style="display:none">
+            <br>
+            <div class="amoforms__fields__edit__row">
+                <div class="amoforms__fields__edit__descr">Button name</div>
+                <input
+                        type="text"
+                        class="amoforms__text-input"
+                        name="form[settings][modal][text]"
+                        placeholder="Button name"
+                        maxlength="30"
+                        value="{{text}}"
+                >
+            </div>
+            <div class="amoforms__styles__edit__row">
+                {{#style}}
+                    <input type="hidden" name="style[id]" value="{{id}}">
+                    <input type="hidden" name="style[type]" value="modal">
+                    <input type="hidden" name="style[is_type_style]" value="true">
+                    {{#background-color}}
+                        <div class="style_wrapper">
+                            <div class="amoforms__fields__edit__descr amoforms__fields__edit__descr-placeholder">Background Color</div>
+                            <input
+                                    type="text"
+                                    class="amoforms__text-input amoforms__modal__style_edit_input amoforms__colorsetting"
+                                    name="style[elements][modal_button][background-color]"
+                                    title="Background color"
+                                    value="{{.}}"
+                            >
+                        </div>
+                    {{/background-color}}
+                    {{#border-radius}}
+                        <div class="style_wrapper">
+                            <div class="amoforms__fields__edit__descr amoforms__fields__edit__descr-placeholder">Border Radius</div>
+                            <input
+                                    type="text"
+                                    class="amoforms__text-input amoforms__modal__style_edit_input"
+                                    name="style[elements][modal_button][border-radius]"
+                                    title="Border radius"
+                                    value="{{.}}"
+                            >
+                        </div>
+                    {{/border-radius}}
+                    {{#border-width}}
+                        <div class="style_wrapper">
+                            <div class="amoforms__fields__edit__descr amoforms__fields__edit__descr-placeholder">Border Width</div>
+                            <input
+                                    type="text"
+                                    class="amoforms__text-input amoforms__modal__style_edit_input"
+                                    name="style[elements][modal_button][border-width]"
+                                    title="Border width"
+                                    value="{{.}}"
+                            >
+                        </div>
+                    {{/border-width}}
+                    {{#border-style}}
+                        <div class="style_wrapper">
+                            <div class="amoforms__fields__edit__descr amoforms__fields__edit__descr-placeholder">Border Style</div>
+                            <select class="amoforms__select__input" data-border="{{.}}" title="Border Style" name="style[elements][modal_button][border-style]">
+                                <option value="solid">Solid</option>
+                                <option value="dashed">Dashed</option>
+                                <option value="dotted">Dotted</option>
+                                <option value="double">Double</option>
+                                <option value="groove">Groove</option>
+                                <option value="ridge">Ridge</option>
+                                <option value="inset">Inset</option>
+                                <option value="outset">Outset</option>
+                            </select>
+                        </div>
+                    {{/border-style}}
+                    {{#border-color}}
+                        <div class="style_wrapper">
+                            <div class="amoforms__fields__edit__descr amoforms__fields__edit__descr-placeholder">Border Color</div>
+                            <input
+                                    type="text"
+                                    class="amoforms__text-input amoforms__modal__style_edit_input amoforms__colorsetting"
+                                    name="style[elements][modal_button][border-color]"
+                                    title="Border Color"
+                                    value="{{.}}"
+                            >
+                        </div>
+                    {{/border-color}}
+                    {{#color}}
+                        <div class="style_wrapper">
+                            <div class="amoforms__fields__edit__descr amoforms__fields__edit__descr-placeholder">Color</div>
+                            <input
+                                    type="text"
+                                    class="amoforms__text-input amoforms__modal__style_edit_input amoforms__colorsetting"
+                                    name="style[elements][modal_button][color]"
+                                    title="Color"
+                                    value="{{.}}"
+                            >
+                        </div>
+                    {{/color}}
+                    {{#font-weight}}
+                        <div class="style_wrapper">
+                            <div class="amoforms__fields__edit__descr amoforms__fields__edit__descr-placeholder">Font Weight</div>
+                            <select class="amoforms__select__input" data-weight="{{.}}" title="Font Weight" name="style[elements][modal_button][font-weight]">
+                                <option value="normal">Normal</option>
+                                <option value="bold">Bold</option>
+                            </select>
+                        </div>
+                    {{/font-weight}}
+                    {{#font-family}}
+                        <div class="style_wrapper">
+                            <div class="amoforms__fields__edit__descr amoforms__fields__edit__descr-placeholder">Font Family</div>
+                            <select class="amoforms__select__input" data-family="{{.}}" title="Font Family" name="style[elements][modal_button][font-family]">
+                                <option style="font-family: 'PT Sans', sans-serif" value="PT Sans">PT Sans</option>
+                                <option style="font-family: 'Arial', sans-serif" value="Arial">Arial</option>
+                                <option style="font-family: 'Courier New', monospace" value="Courier New">Courier New</option>
+                                <option style="font-family: 'Georgia', serif" value="Georgia">Georgia</option>
+                                <option style="font-family: 'Lucida Console', monospace" value="Lucida Console">Lucida Console</option>
+                                <option style="font-family: 'Tahoma', sans-serif" value="Tahoma">Tahoma</option>
+                                <option style="font-family: 'Times New Roman', serif" value="Times New Roman">Times New Roman</option>
+                                <option style="font-family: 'Verdana', sans-serif" value="Verdana">Verdana</option>
+                            </select>
+                        </div>
+                    {{/font-family}}
+                    {{#font-size}}
+                        <div class="style_wrapper">
+                            <div class="amoforms__fields__edit__descr amoforms__fields__edit__descr-placeholder">Font Size</div>
+                            <input
+                                    type="text"
+                                    class="amoforms__text-input amoforms__modal__style_edit_input"
+                                    name="style[elements][modal_button][font-size]"
+                                    title="Font Size"
+                                    value="{{.}}"
+                            >
+                        </div>
+                    {{/font-size}}
+                    {{#padding}}
+                        <div class="style_wrapper">
+                            <div class="amoforms__fields__edit__descr amoforms__fields__edit__descr-placeholder">Padding</div>
+                            <input
+                                    type="text"
+                                    class="amoforms__text-input amoforms__modal__style_edit_input"
+                                    name="style[elements][modal_button][padding]"
+                                    title="Padding"
+                                    value="{{.}}"
+                            >
+                        </div>
+                    {{/padding}}
+                    {{#margin}}
+                        <div class="style_wrapper">
+                            <div class="amoforms__fields__edit__descr amoforms__fields__edit__descr-placeholder">Margin</div>
+                            <input
+                                    type="text"
+                                    class="amoforms__text-input amoforms__modal__style_edit_input"
+                                    name="style[elements][modal_button][margin]"
+                                    title="Margin"
+                                    value="{{.}}"
+                            >
+                        </div>
+                    {{/margin}}
+                    {{#height}}
+                        <div class="style_wrapper">
+                            <div class="amoforms__fields__edit__descr amoforms__fields__edit__descr-placeholder">Height</div>
+                            <input
+                                    type="text"
+                                    class="amoforms__text-input amoforms__modal__style_edit_input"
+                                    name="style[elements][modal_button][height]"
+                                    title="Height"
+                                    value="{{.}}"
+                            >
+                        </div>
+                    {{/height}}
+                    {{#width}}
+                        <div class="style_wrapper">
+                            <div class="amoforms__fields__edit__descr amoforms__fields__edit__descr-placeholder">Width</div>
+                            <input
+                                    type="text"
+                                    class="amoforms__text-input amoforms__modal__style_edit_input"
+                                    name="style[elements][modal_button][width]"
+                                    title="Width"
+                                    value="{{.}}"
+                            >
+                        </div>
+                    {{/width}}
+                    <div class="amoforms__fields__edit__actions">
+                        <button class="amoforms__button-input js-modal-save">Save</button>
+                        <button class="amoforms__button-input-cancel amoforms__modal_editor_cancel">Cancel</button>
+                    </div>
+                {{/style}}
+            </div>
+        </div>
+</div>

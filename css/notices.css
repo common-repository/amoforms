@@ -1,0 +1,393 @@
+.installed{
+    font-family: "PT Sans", sans-serif;
+    min-height: 63px;
+    height: auto;
+    /*background-color: #0084c0 !important;*/
+    background: linear-gradient(to right, #23b1d1 0%,#00a9d3 16%,#00a9d3 16%,#0084c0 43%,#0084c0 43%,#0084c0 100%) !important;
+    border: none !important;
+    border-radius: 2px;
+    display: block;
+    position: relative;
+}
+
+.installed > .amoforms__notice.btn {
+    float: left;
+    width: 290px;
+    padding-bottom: 0;
+}
+.installed > .amoforms__notice.about {
+    padding-top: 6px;
+}
+.installed > .amoforms__notice.logo {
+    position: absolute;
+    top: 15px;
+    right: 25px;
+}
+.installed > .amoforms__notice  button.amoforms__notice-go-activation{
+    display: inline-block;
+    width: auto;
+    height: 40px;
+    background-color: #f3be31;
+    border-radius: 2px;
+    background-image: none;
+    border: 1px solid transparent;
+    touch-action: manipulation;
+    cursor: pointer;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    padding: 6px 12px;
+    font-size: 14px;
+    font-weight: bolder;
+    margin-top: 12px;
+}
+.installed > .amoforms__notice  p.amoforms__notice-about{
+    padding-right: 130px;
+    margin: 10px 100px 0 70px;
+    display: block;
+    font-size: 17px;
+    color: #fff;
+}
+@media (max-width: 1330px){
+    .installed > .amoforms__notice  p.amoforms__notice-about{
+        margin: 10px 50px 0 60px;
+    }
+    .installed > .amoforms__notice.btn {
+        width: 240px;
+    }
+}
+@media (max-width: 1230px) {
+    .installed{
+        min-height: 80px;
+    }
+    .installed > .amoforms__notice  p.amoforms__notice-about{
+        margin: 7px 90px 0 60px;
+    }
+    .installed > .amoforms__notice.btn {
+        margin-top: 8px;
+        width: 260px;
+    }
+    .installed > .amoforms__notice.logo {
+        top: 20px;
+    }
+}
+@media (max-width: 1073px){
+    .installed > .amoforms__notice  p.amoforms__notice-about{
+        margin-top: 10px;
+        font-size: 15px;
+    }
+}
+@media (min-width: 960px) and (max-width: 990px){
+    .installed > .amoforms__notice  p.amoforms__notice-about{
+        margin: 7px 70px 0 60px;
+    }
+}
+@media (max-width: 960px) and (min-width: 907px) {
+    .installed > .amoforms__notice  p.amoforms__notice-about{
+        margin: 7px 90px 0 60px;
+    }
+}
+@media (min-width: 820px) and (max-width: 870px){
+    .installed > .amoforms__notice  p.amoforms__notice-about{
+        margin: 7px 70px 0 60px;
+    }
+}
+@media (max-width: 821px) and (min-width: 783px) {
+    .installed > .amoforms__notice.btn {
+        margin-top: 10px;
+        padding-bottom: 15px;
+    }
+    .installed > .amoforms__notice.logo {
+        top: 20px;
+    }
+    .installed > .amoforms__notice  p.amoforms__notice-about{
+        margin: 0 70px 0 60px;
+    }
+}
+@media (max-width: 780px) {
+    .installed > .amoforms__notice.btn {
+        margin-top: 10px;
+        padding-bottom: 15px;
+        width: 240px;
+    }
+    .installed > .amoforms__notice.logo {
+        top: 25px;
+    }
+    .installed > .amoforms__notice  p.amoforms__notice-about{
+        margin: 0 60px 0 0;
+    }
+}
+@media (max-width: 780px) {
+    .installed > .amoforms__notice.about{
+        display: none;
+    }
+}
+@media (max-width: 490px) {
+    .installed {
+        background: #0084c0 !important;
+        padding-left: 20px;
+    }
+    .installed > .amoforms__notice.btn {
+        margin: 0 auto;
+        padding-bottom: 15px;
+        float: none;
+    }
+    .installed > .amoforms__notice.btn a{
+        margin-left: 10px !important;
+    }
+    .installed > .amoforms__notice.logo {
+        margin-bottom: 5px;
+        position: initial;
+        display: block;
+    }
+    .installed > .amoforms__notice.logo img{
+        margin: 0 auto;
+        display: block;
+    }
+
+}
+
+.promo{
+    font-family: "PT Sans", sans-serif;
+    height: 105px;
+    background-color: #0084c0 !important;
+    border: none !important;
+    margin: 5px !important;
+    border-radius: 2px;
+    display: block;
+    position: relative;
+}
+
+.promo > .amoforms__notice.btn {
+    display: inline-block;
+    width: 290px;
+}
+.promo > .amoforms__notice.about {
+    margin-left: 240px;
+    padding-top: 6px;
+}
+.promo > .amoforms__notice.logo {
+    position: absolute;
+    top: 10px;
+    padding: 20px;
+    border-right: 1px solid #66b5d9 !important;
+    display: block;
+}
+.promo > .amoforms__notice.about > p {
+    font-family: "Open Sans", sans-serif;
+    color: #fff;
+    font-weight: 500;
+}
+.promo > .amoforms__notice.about > p.title {
+    font-size: 21px;
+    line-height: 30px;
+}
+.promo > .amoforms__notice.about > p.text {
+    font-size: 15px;
+    line-height: 20px;
+}
+.promo > .amoforms__notice.about  > ul.links{
+    padding-left: 0;
+    margin-top: 12px;
+    margin-bottom: 0;
+    list-style: none;
+}
+.promo > .amoforms__notice.about  > ul.links > li {
+    float: left;
+    display: block;
+    margin-right: 30px;
+}
+.promo > .amoforms__notice.about  > ul.links > li > a {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 500;
+    color: #fff;
+}
+.promo i.p-icon{
+    width: 20px;
+    height: 20px;
+    float: left;
+    background: url(../images/promo_sprite.png) no-repeat;
+    background-position: -5px;
+    margin: 0 5px;
+}
+.promo i.p-icon.docs{
+    background-position: -44px -5px;
+}
+.promo i.p-icon.demo{
+    background-position: -7px -5px;
+}
+.promo i.p-icon.help{
+    background-position: -79px -5px;
+}
+.promo i.p-icon.dismiss{
+    background-position: -115px -5px;
+}
+
+.review{
+    font-family: "PT Sans", sans-serif;
+    height: 105px;
+    background-color: #0084c0 !important;
+    border: none !important;
+    margin: 5px !important;
+    border-radius: 2px;
+    display: block;
+    position: relative;
+    margin-bottom: 25px !important;
+}
+
+.review > .amoforms__notice.btn {
+    display: inline-block;
+    width: 290px;
+}
+.review > .amoforms__notice.about {
+    position: absolute;
+    top: 15px;
+    margin-left: 240px;
+    padding-top: 0;
+}
+.review > .amoforms__notice.logo {
+    position: absolute;
+    top: 10px;
+    padding: 20px;
+    border-right: 1px solid #66b5d9 !important;
+    display: block;
+}
+.review > .amoforms__notice.about > p {
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+    color: #fff;
+    font-weight: 500;
+}
+.review > .amoforms__notice.about > p.title {
+    font-size: 21px;
+    padding-bottom: 8px;
+}
+.review > .amoforms__notice.about > p.text {
+    font-size: 14px;
+    line-height: 17px;
+}
+.review > .amoforms__notice.about  > ul.links{
+    padding-left: 0;
+    margin-top: 5px;
+    margin-bottom: 0;
+    list-style: none;
+}
+.review > .amoforms__notice.about  > ul.links > li {
+    float: left;
+    display: block;
+    margin-right: 30px;
+}
+.review > .amoforms__notice.about  > ul.links > li > a {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 500;
+    color: #fff;
+    text-decoration: underline;
+}
+.review i.p-icon{
+    width: 20px;
+    height: 20px;
+    float: left;
+    background: url(../images/sprite_review.png) no-repeat;
+    background-size: 400%;
+    margin-right: 6px;
+}
+.review i.p-icon.later {
+    background-position: 1px 0;
+}
+.review i.p-icon.already{
+    background-position: -20px 0;
+}
+.review i.p-icon.sure{
+    background-position: -40px 0;
+}
+.review i.p-icon.close{
+    background-position: -60px 0;
+ }
+.review .close{
+    position: absolute;
+    right: 4px;
+    top: 7px;
+}
+@media (max-width: 1160px){
+    .review{
+        height: 120px;
+    }
+    .review > .amoforms__notice.about{
+        top: 12px;
+
+    }
+    .review > .amoforms__notice.about > p.text {
+        max-width: 600px;
+    }
+    .review > .amoforms__notice.logo {
+        top: 20px;
+    }
+}
+@media (min-width: 960px) and (max-width: 1030px){
+    .review > .amoforms__notice.about  > ul.links > li > a {
+        font-size: 13px;
+    }
+    .review > .amoforms__notice.about  > ul.links > li {
+        margin-right: 25px;
+    }
+    .review > .amoforms__notice.about > p.text {
+        max-width: 520px;
+    }
+}
+@media (min-width: 783px) and (max-width: 920px){
+    .review > .amoforms__notice.about  > ul.links > li > a {
+        font-size: 12px;
+    }
+    .review > .amoforms__notice.about  > ul.links > li {
+        margin-right: 15px;
+    }
+    .review > .amoforms__notice.about > p.text {
+        max-width: 500px;
+    }
+}@media (max-width: 782px){
+    .review {
+        height: auto;
+        width: 300px;
+        min-height: 340px;
+        max-width: 450px;
+    }
+    .review > .amoforms__notice.logo {
+        position: inherit;
+        padding: 0 20px;
+        display: block;
+    }
+    .review > .amoforms__notice.logo img{
+        display: block;
+        margin: 0 auto;
+        padding: 0 10px 25px 10px;
+        border-bottom: 1px solid #66b5d9 !important;
+    }
+    .review > .amoforms__notice.about {
+        position: inherit;
+        height: auto;
+        padding: 0 40px;
+        margin: 0;
+    }
+    .review > .amoforms__notice.about > p.title {
+        text-align: center;
+        padding: 10px 20px;
+    }
+    .review > .amoforms__notice.about > p.text {
+        margin: 10px 0 0 17px;
+        line-height: 19px;
+    }
+    .review > .amoforms__notice.about > ul.links {
+        margin-top: 20px;
+        margin-left: 10px;
+    }
+    .review > .amoforms__notice.about > ul.links > li {
+        float: none;
+        clear: both;
+        display: block;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    .review > .amoforms__notice.about > ul.links > li > a {
+        font-size: 13px;
+    }
+}

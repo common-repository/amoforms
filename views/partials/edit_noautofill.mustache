@@ -1,0 +1,29 @@
+<div class="amoforms__fields__edit__descr amoforms__fields__edit__descr-noautofill">Disable browser autocomplete</div>
+<div class="amoforms__fields__edit__row__left__radios">
+    <label class="amoforms__radio__label">
+				<span class="amoforms__radio">
+					<input
+                            type="radio"
+                            name="field{{field_id}}[options][noautofill]"
+                            title="Required"
+                            value="1"
+                            {{#field.options.noautofill}}checked="checked"{{/field.options.noautofill}}
+                    >
+					<b></b>
+				</span>
+        <b>Yes</b>
+    </label>
+    <label class="amoforms__radio__label">
+				<span class="amoforms__radio">
+					<input
+                            type="radio"
+                            name="field{{field_id}}[options][noautofill]"
+                            title="Required"
+                            value="0"
+                            {{^field.options.noautofill}}checked="checked"{{/field.options.noautofill}}
+                    >
+					<b></b>
+				</span>
+        <b>No</b>
+    </label>
+</div>

@@ -1,0 +1,7 @@
+<div class="amoforms__select">
+	<select class="amoforms__select__input amoforms_field_element {{#field.required}}js-is-required{{/field.required}}" name="fields[{{field_id}}]" placeholder="{{#name_position_inside}}{{field.name}}{{/name_position_inside}}{{^name_position_inside}}{{field.placeholder}}{{/name_position_inside}}">
+		{{#field.enums}}
+		<option value="{{.}}">{{.}}</option>
+		{{/field.enums}}
+	</select>
+</div>

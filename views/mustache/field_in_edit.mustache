@@ -1,0 +1,247 @@
+{{^ grid.right }}
+    <div class="amoforms__fields__container">
+        <div class="amoforms__fields__container__handler"></div>
+        <div class="amoforms__fields__container__list">
+{{/grid.right}}
+        <div id="style-{{field_style.id}}" class="amoforms__fields__row {{#grid.full}}full{{/grid.full}}{{^grid.full}}half{{/grid.full}} {{class_name}} amoforms-field-name-position-{{#name_position_inside}}inside{{/name_position_inside}}{{#name_position_above}}above{{/name_position_above}}{{#name_position_before}}before{{/name_position_before}}" data-type="{{field.type}}" data-id="style-{{field_style.id}}">
+            <div class="amoforms__fields__row-view amoforms_field_wrapper">
+                {{#name_position_before}}
+                    {{^is_pos_after}}
+                        <div class="amoforms__fields__row__inner__descr" {{^field.description}}style="display: none"{{/field.description}}>{{field.description}}</div>
+                    {{/is_pos_after}}
+                {{/name_position_before}}
+
+                {{#is_radio}}
+                    {{#name_position_inside}}
+                        {{^is_pos_after}}
+                            <div class="amoforms__fields__row__inner__descr" {{^field.description}}style="display: none"{{/field.description}}>{{field.description}}333</div>
+                        {{/is_pos_after}}
+                    {{/name_position_inside}}
+                {{/is_radio}}
+
+                <div class="amoforms__fields__row__inner">
+                    {{#is_line}}
+                        <div class="amoforms__fields__row__inner__control amoforms__fields__row__inner__control-line">
+                            <div class="amoforms__line amoforms_field_element"></div>
+                            <div class="amoforms__fields__editor__row__actions input_buttons">
+                                <span class="amoforms__fields__editor__row__actions__action amoforms__fields__editor__row__actions__action-edit" data-text="Edit">Edit</span>
+                                <span class="amoforms__fields__editor__row__actions__action amoforms__fields__editor__row__actions__action-duplicate" data-text="Duplicate">Duplicate</span>
+                                <span class="amoforms__fields__editor__row__actions__action amoforms__fields__editor__row__actions__action-delete" data-text="Delete">Delete</span>
+                            </div>
+                        </div>
+                    {{/is_line}}
+
+                    {{^is_line}}
+                        {{#is_checkbox}}
+                            {{^name_position_before}}{{^is_pos_after}}<div class="amoforms__fields__row__inner__descr" {{^field.description}}style="display: none"{{/field.description}}>{{field.description}}</div>{{/is_pos_after}}{{/name_position_before}}
+                            <div class="amoforms__fields__row__inner__control">
+                                <span class="amoforms__forms_hint tooltip-form" title="{{field.hint}}" {{^field.hint}}style="display: none"{{/field.hint}}></span>
+                                <label class="amoforms__fields__row__inner__name amoforms__fields__row__inner__name-checkbox amoforms_field_label" {{^field.name}}style="display: none"{{/field.name}}>
+                                    <span>{{field.name}}</span>{{#field.required}}<b>*</b>{{/field.required}}<!--
+                        -->{{> checkbox }}
+                                </label>
+                                <div class="amoforms__fields__editor__row__actions input_buttons">
+                                    <span class="amoforms__fields__editor__row__actions__action amoforms__fields__editor__row__actions__action-edit" data-text="Edit">Edit</span>
+                                    <span class="amoforms__fields__editor__row__actions__action amoforms__fields__editor__row__actions__action-duplicate" data-text="Duplicate">Duplicate</span>
+                                    <span class="amoforms__fields__editor__row__actions__action amoforms__fields__editor__row__actions__action-delete" data-text="Delete">Delete</span>
+                                </div>
+                            </div>
+                        {{/is_checkbox}}
+			{{^is_checkbox}}
+			{{^is_heading}}{{^is_antispam}}
+                <div class="amoforms__fields__row__inner__name amoforms_field_label" {{#field.name}}{{#name_position_inside}}{{^is_radio}}{{^is_checkbox}}style="display:none"{{/is_checkbox}}{{/is_radio}}{{/name_position_inside}}{{/field.name}}{{^field.name}}style="display: none"{{/field.name}}><span>{{field.name}}</span>{{#field.required}}<b>*</b>{{/field.required}}</div>
+            {{/is_antispam}}{{/is_heading}}
+                {{#is_antispam}}<div class="amoforms__fields__row__inner__name amoforms_field_label"><span>{{field.spam.question}}</span></div>{{/is_antispam}}
+            {{#is_radio}}
+                {{^name_position_before}}{{^name_position_inside}}
+                    {{^is_pos_after}}
+                        <div class="amoforms__fields__row__inner__descr" {{^field.description}}style="display: none"{{/field.description}}>{{field.description}}333</div>
+
+                                    {{/is_pos_after}}
+                                {{/name_position_inside}}{{/name_position_before}}
+                            {{/is_radio}}
+
+                            {{^is_radio}}
+                                {{^is_instructions}}{{^name_position_before}}{{^is_pos_after}}<div class="amoforms__fields__row__inner__descr" {{^field.description}}style="display: none"{{/field.description}}>{{field.description}}</div>{{/is_pos_after}}{{/name_position_before}}{{/is_instructions}}
+                            {{/is_radio}}
+                            <div class="amoforms__fields__row__inner__control">
+                                <span class="amoforms__forms_hint tooltip-form" title="{{field.hint}}" {{^field.hint}}style="display: none"{{/field.hint}}></span>
+
+                                {{#is_name}}{{> text }}{{/is_name}}
+                                {{#is_email}}{{> text }}{{/is_email}}
+                                {{#is_phone}}{{> text }}{{/is_phone}}
+                                {{#is_company}}{{> text }}{{/is_company}}
+                                {{#is_text}}{{> text }}{{/is_text}}
+                                {{#is_city}}{{> text }}{{/is_city}}
+                                {{#is_state}}{{> text }}{{/is_state}}
+                                {{#is_zippost}}{{> text }}{{/is_zippost}}
+                                {{#is_country}}{{> select }}{{/is_country}}
+                                {{#is_file}}{{> file_plug }}{{/is_file}}
+                                {{#is_captcha}}{{> captcha }}{{/is_captcha}}
+                                {{#is_url}}{{> text }}{{/is_url}}
+                                {{#is_number}}{{> text }}{{/is_number}}
+                                {{#is_textarea}}{{> textarea }}{{/is_textarea}}
+                                {{#is_address}}{{> textarea }}{{/is_address}}
+                                {{#is_select}}{{> select }}{{/is_select}}
+                                {{#is_radio}}{{> radio }}{{/is_radio}}
+                                {{#is_multiselect}}{{> select }}{{/is_multiselect}}
+                                {{#is_date}}{{> date }}{{/is_date}}
+                                {{#is_heading}}{{> heading }}{{/is_heading}}
+                                {{#is_instructions}}{{> instructions }}{{/is_instructions}}
+                                {{#is_antispam}}{{> antispam }}{{/is_antispam}}
+                                {{#is_rating}}{{> rating }}{{/is_rating}}
+                                {{#is_tax}}{{> tax_plug }}{{/is_tax}}
+                                {{#is_total}}{{> total_plug }}{{/is_total}}
+
+                                <div class="amoforms__fields__editor__row__actions input_buttons">
+                                    <span class="amoforms__fields__editor__row__actions__action amoforms__fields__editor__row__actions__action-edit" data-text="Edit">Edit</span>
+                                    {{^is_captcha}}<span class="amoforms__fields__editor__row__actions__action amoforms__fields__editor__row__actions__action-duplicate" data-text="Duplicate">Duplicate</span>{{/is_captcha}}
+                                    <span class="amoforms__fields__editor__row__actions__action amoforms__fields__editor__row__actions__action-delete" data-text="Delete">Delete</span>
+                                </div>
+                            </div>
+                        {{/is_checkbox}}
+                    {{/is_line}}
+                </div>
+                {{^is_instructions}}{{#is_pos_after}}<div class="amoforms__fields__row__inner__descr" {{^field.description}}style="display: none"{{/field.description}}>{{field.description}}</div>{{/is_pos_after}}{{/is_instructions}}
+            </div>
+
+            <div class="amoforms__fields__edit" style="display: none;">
+                {{^is_line}}
+                {{#field_style.elements}}
+                    <button class="amoforms__fields__settings__btn fs pressed" data-type="field-settings">Settings</button>
+                    <button class="amoforms__fields__settings__btn fs" data-type="field-styles">Styles</button>
+                {{/field_style.elements}}
+                {{/is_line}}
+                <div class="amoforms__fields__edit__settings" {{#is_line}}style="display: none;"{{/is_line}}>
+                    {{^is_antispam}}
+                    <div class="amoforms__fields__edit__row">
+                        <div class="amoforms__fields__edit__descr">Field Name</div>
+                        <input
+                                type="text"
+                                class="amoforms__text-input amoforms__fields__edit__input js-is-required {{#is_heading}}js-is-required{{/is_heading}}"
+                                name="field[name]"
+                                placeholder="Field name"
+                                value="{{field.name}}"
+                        >
+                    </div>
+                    {{/is_antispam}}
+                    <div class="amoforms__fields__edit__row">
+                        <div class="amoforms__fields__edit__descr">{{#is_instructions}}Text{{/is_instructions}}{{^is_instructions}}Description{{/is_instructions}}</div>
+                        <input
+                                type="text"
+                                class="amoforms__text-input"
+                                name="field[description]"
+                                placeholder="Field description"
+                                value="{{#field.description}}{{field.description}}{{/field.description}}"
+                                title="Description"
+                        >
+                    </div>
+                    {{^is_captcha}}
+                    <div class="amoforms__fields__edit__row">
+                        <div class="amoforms__fields__edit__descr">Help Text</div>
+                        <span class="amoforms__settings_hint tooltip-settings" title="If «Help Text» field is filled in, there will be a question mark placed in the right corner of the input field. Hovering over this question mark will show the help text"></span>
+                        <input
+                                type="text"
+                                class="amoforms__text-input amoforms__fields__edit__input"
+                                name="field[hint]"
+                                placeholder="Field hint"
+                                value="{{field.hint}}"
+                        >
+                    </div>
+                    {{/is_captcha}}
+
+                    {{#is_tax}}{{> edit_tax }}{{/is_tax}}
+                    {{#is_total}}{{> edit_total }}{{/is_total}}
+
+                    {{#is_name}}{{> more_options }}{{/is_name}}
+                    {{#is_email}}{{> more_options }}{{/is_email}}
+                    {{#is_phone}}{{> more_options }}{{/is_phone}}
+                    {{#is_company}}{{> more_options }}{{/is_company}}
+                    {{#is_text}}{{> more_options }}{{/is_text}}
+                    {{#is_url}}{{> more_options }}{{/is_url}}
+                    {{#is_number}}{{> more_options }}{{/is_number}}
+                    {{#is_textarea}}{{> more_options }}{{/is_textarea}}
+                    {{#is_address}}{{> more_options }}{{/is_address}}
+                    {{#is_select}}{{> more_options }}{{/is_select}}
+                    {{#is_radio}}{{> more_options }}{{/is_radio}}
+                    {{#is_checkbox}}{{> more_options }}{{/is_checkbox}}
+                    {{#is_multiselect}}{{> more_options }}{{/is_multiselect}}
+                    {{#is_date}}{{> more_options }}{{/is_date}}
+                    {{#is_file}}{{> more_options }}{{> edit_filetypes}}{{/is_file}}
+                    {{#is_city}}{{> more_options }}{{/is_city}}
+                    {{#is_country}}{{> more_options }}{{/is_country}}
+
+                    {{#is_antispam}}
+                        {{> edit_antispam }}
+                        {{> more_options }}
+                    {{/is_antispam}}
+
+                    {{#is_select}}{{>edit_options}}{{/is_select}}
+                    {{#is_multiselect}}{{>edit_options}}{{/is_multiselect}}
+                    {{#is_radio}}{{>edit_options}}{{/is_radio}}
+
+                    {{#is_phone}}{{> edit_mask }}{{/is_phone}}
+                    {{#is_text}}{{> edit_mask }}{{/is_text}}
+                    {{#is_captcha}}{{> edit_captcha }}{{/is_captcha}}
+                    {{#is_radio}}
+                        <div class="amoforms__fields__edit__row clearfix">
+                            <div class="amoforms__fields__edit__row__left">
+                                <div class="amoforms__fields__edit__descr">Options Columns</div>
+                                <div class="amoforms__fields__edit__row__left__radios">
+                                    <label class="amoforms__radio__label">
+                                <span class="amoforms__radio">
+                                    <input
+                                            type="radio"
+                                            name="field{{field_id}}[layout]"
+                                            title="Inline"
+                                            value="{{consts.layout_inline}}"
+                                            {{#is_layout_inline}}checked="checked"{{/is_layout_inline}}
+                                    >
+                                    <b></b>
+                                </span>
+                                        <b>Inline</b>
+                                    </label>
+                                    <label class="amoforms__radio__label">
+                                <span class="amoforms__radio">
+                                    <input
+                                            type="radio"
+                                            name="field{{field_id}}[layout]"
+                                            title="Vertical"
+                                            value="{{consts.layout_vertical}}"
+                                            {{^is_layout_inline}}checked="checked"{{/is_layout_inline}}
+                                    >
+                                    <b></b>
+                                </span>
+                                        <b>Vertical</b>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    {{/is_radio}}
+
+                    <div class="amoforms__fields__edit__actions">
+                        <input type="hidden" name="field[id]" value="{{field_id}}">
+                        <input type="hidden" name="field[type]" value="{{field.type}}">
+                        <input type="hidden" name="field[grid]" value="{{field.grid}}">
+                        <button class="amoforms__button-input js-amoforms-field-save">Save</button><!--
+                    --><button class="amoforms__button-input-cancel js-amoforms-field-cancel">Cancel</button>
+                    </div>
+                </div>
+                <div class="amoforms__fields__edit__styles" style="{{^is_line}}display: none{{/is_line}}">
+                    {{> edit_styles }}
+                    <div class="amoforms__fields__edit__actions">
+                        <input type="hidden" name="style[id]" value="{{field_style.id}}">
+                        <input type="hidden" name="style[type]" value="{{field_style.type}}">
+                        <input type="hidden" name="style[object_id]" value="{{field_id}}">
+                        <button class="amoforms__button-input js-amoforms-style-save">Save</button>
+                        <button class="amoforms__button-input-cancel js-amoforms-field-cancel">Cancel</button>
+                        <button class="amoforms__button-input-reset js-amoforms-style-reset">Reset</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+{{^ grid.left }}
+    </div>
+    <div class="clearfix"></div>
+    </div>
+{{/grid.left}}

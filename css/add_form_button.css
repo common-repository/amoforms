@@ -1,0 +1,100 @@
+.amoforms-add-form-modal {
+  position: fixed;
+  top: 35%;
+  left: 38%;
+  z-index: 999999999999;
+  width: 350px;
+  height: 150px;
+  text-align: center;
+  background: #fff;
+  vertical-align: middle;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.amoforms-add-form-modal__panel__title {
+  text-align: left;
+  background: #fcfcfc;
+  border-bottom: 1px solid #dfdfdf;
+  height: 36px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 36px;
+  padding: 0 36px 0 16px;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+
+.amoforms-add-form-modal__panel__title-text {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 36px;
+}
+
+.amoforms-add-form-modal__panel {
+  padding: 20px;
+  text-align: left;
+}
+
+.amoforms-add-form-modal__footer {
+  padding: 8px 16px;
+  background: #fcfcfc;
+  border-top: 1px solid #dfdfdf;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.amoforms-add-form-modal button {
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 13px;
+  line-height: 26px;
+  height: 28px;
+  margin: 0;
+  padding: 0 10px 1px;
+  border: 1px solid #ccc;
+  -webkit-appearance: none;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  white-space: nowrap;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.amoforms-add-form-modal__footer_button--ok {
+  float: right;
+  background: #00a0d2;
+  border-color: #0073aa;
+  -webkit-box-shadow: inset 0 1px 0 rgba(120,200,230,.5),0 1px 0 rgba(0,0,0,.15);
+  box-shadow: inset 0 1px 0 rgba(120,200,230,.5),0 1px 0 rgba(0,0,0,.15);
+  color: #fff;
+  text-decoration: none;
+}
+
+.amoforms-add-form-modal .amoforms-add-form-modal__footer_button--cancel {
+  float: left;
+  border: 0;
+  background-color: #fcfcfc;
+  border-radius: 0;
+  text-decoration: none;
+  padding: 1px 2px;
+  color: #a00;
+}
+
+.button.amoforms-add-form-button > .wp-media-buttons-icon {
+  margin-right: 6px;
+}
+
+.button.amoforms-add-form-button > .wp-media-buttons-icon:before {
+  font: 400 18px/1 dashicons;
+  speak: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "\f116";
+}
+

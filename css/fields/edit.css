@@ -1,0 +1,404 @@
+.amoforms .amoforms__fields__edit {
+  font-family: 'PT Sans', sans-serif;
+  background: #f5f5f5;
+  margin: 27px -41px 37px 0;
+  display: block;
+  border: 1px solid #d4d5d8;
+  padding: 28px 40px 40px 40px;
+  position: relative;
+  box-shadow: 2.5px 4.33px 9.4px 0.6px rgba(0, 0, 1, 0.2);
+  font-size: 15px !important;
+  color: #32424f !important;
+}
+.amoforms .full .amoforms__fields__edit{
+  width: 100%;
+}
+.amoforms .amoforms__fields__edit-submit.amoforms__fields__edit{
+  width: 110%;
+}
+.amoforms .half .amoforms__fields__edit{
+  width: 200%;
+}
+.amoforms .half:last-child .amoforms__fields__edit {
+  margin-left: -100%;
+}
+.amoforms .amoforms__fields__edit-submit.amoforms__fields__edit {
+  margin: 27px -41px 37px -43px;
+}
+.amoforms .amoforms__fields__edit.delete {
+  margin: 35px 0 0 0;
+}
+.amoforms .sortable-ghost .amoforms__fields__edit {
+  display: none;
+}
+.amoforms .amoforms__fields__edit:before,
+.amoforms .amoforms__fields__edit:after {
+  content: "";
+  position: absolute;
+  left: 44px;
+  top: -8px;
+}
+.amoforms .amoforms__fields__edit:before {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 6px 6px 6px;
+  border-color: transparent transparent #f5f5f5 transparent;
+  z-index: 1;
+  top: -6px;
+  left: 45px;
+}
+.amoforms .amoforms__fields__edit:after {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 7px 8px 7px;
+  border-color: transparent transparent #d7d8db transparent;
+}
+.amoforms .half:last-child .amoforms__fields__edit:before,
+.amoforms .half:last-child .amoforms__fields__edit:after{
+  right: 44px;
+  left: auto;
+}
+.amoforms__fields__row.amoforms__fields__row-submit.in-edit .amoforms__colorpicker {
+  border: 1px solid #dedede;
+}
+
+.amoforms .amoforms__fields__edit__row {
+  margin-top: 24px;
+}
+.amoforms .amoforms__fields__edit__row:first-child {
+  margin-top: 0;
+}
+.amoforms .amoforms__fields__edit__descr {
+  padding: 0;
+  font-style: italic;
+  color: #676e79;
+  margin: 0 0 6px 0;
+}
+.amoforms .amoforms__fields__edit__descr.inline {
+  display: inline-block;
+  margin-right: 20px;
+}
+.amoforms .amoforms__fields__edit__descr-default-value,
+.amoforms .amoforms__fields__edit__descr-placeholder,
+.amoforms .amoforms__fields__edit__descr-label,
+.amoforms .amoforms__fields__edit__descr-noautofill,
+.amoforms .amoforms__fields__edit__descr-tax,
+.amoforms .amoforms__fields__edit__descr-total,
+.amoforms .amoforms__fields__edit__descr-autototal,
+.amoforms .amoforms__fields__edit__descr-filesize {
+  margin-top: 20px;
+}
+.amoforms .style_wrapper:first-child .amoforms__fields__edit__descr-default-value,
+.amoforms .style_wrapper:first-child .amoforms__fields__edit__descr-placeholder,
+.amoforms .style_wrapper:first-child .amoforms__fields__edit__descr-label,
+.amoforms .style_wrapper:first-child .amoforms__fields__edit__descr-noautofill,
+.amoforms .style_wrapper:first-child .amoforms__fields__edit__descr-tax,
+.amoforms .style_wrapper:first-child .amoforms__fields__edit__descr-total,
+.amoforms .style_wrapper:first-child .amoforms__fields__edit__descr-autototal,
+.amoforms .style_wrapper:first-child .amoforms__fields__edit__descr-filesize {
+  margin-top: 0;
+}
+
+.amoforms .amoforms__text-input.amoforms__fields__edit__input,
+.amoforms .amoforms__text-input.amoforms__styles__edit__input {
+  min-height: 37px;
+}
+.amoforms .amoforms__fields__edit-submit .amoforms__text-input.amoforms__fields__edit__input {
+  width: 95%;
+}
+.amoforms .amoforms__text-input.amoforms__number-input {
+  max-width: 40%;
+}
+.amoforms .amoforms__text-input.amoforms__fields__edit__textarea {
+  height: 56px;
+}
+.amoforms .amoforms__fields__edit__row__right,
+.amoforms .amoforms__fields__edit__row__left {
+  width: 50%;
+}
+.amoforms .amoforms__fields__edit__row__left {
+  float: left;
+  padding-right: 19px;
+}
+.amoforms .amoforms__fields__edit__row__right {
+  float: right;
+  padding-left: 24px;
+}
+
+.amoforms .amoforms__fields__edit__row__left__radios {
+  padding-top: 7px;
+  padding-bottom: 9px;
+}
+.amoforms .amoforms__fields__edit__row__right__radios .amoforms__select:after {
+  top: 26px;
+  right: 3px;
+}
+.amoforms .amoforms__fields__edit__row__left__radios .amoforms__radio + b{
+  margin-left: 1px;
+  margin-right: 20px;
+}
+.amoforms .amoforms__fields__edit__row__left__radios .amoforms__fields__edit__descr{
+  margin-bottom: 15px;
+}
+
+.amoforms .amoforms__fields__edit__row .amoforms__checkbox__label,
+.amoforms .amoforms__fields__edit__row .amoforms__radio__label {
+  color: #2a3640;
+}
+
+.amoforms .amoforms__fields__edit__row__options__item {
+  position: relative;
+  margin-top: 10px;
+  padding-right: 70px;
+}
+.amoforms .amoforms__fields__edit__row__options__item:first-child {
+  margin-top: 0;
+}
+.amoforms .amoforms__fields__edit__row__options__item__move {
+  width: 20px;
+  height: 20px;
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNy4xLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9Ikljb25zIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCINCgkgdmlld0JveD0iMCAwIDE2IDE2IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAxNiAxNiIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8cG9seWdvbiBwb2ludHM9IjE2LDggMTIsNSAxMiw3IDksNyA5LDQgMTEsNCA4LDAgNSw0IDcsNCA3LDcgNCw3IDQsNSAwLDggNCwxMSA0LDkgNyw5IDcsMTIgNSwxMiA4LDE2IDExLDEyIDksMTIgOSw5IDEyLDkgMTIsMTEgDQoJIi8+DQo8L3N2Zz4NCg==) no-repeat center center;
+  background-size: 16px 16px;
+  display: block;
+  position: absolute;
+  right: 43px;
+  top: 9px;
+  cursor: move;
+}
+.amoforms .amoforms__fields__edit__row__options__item__trash {
+  width: 20px;
+  height: 20px;
+  background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJ4TWlkWU1pZCIgd2lkdGg9IjExIiBoZWlnaHQ9IjEyIiB2aWV3Qm94PSIwIDAgMTEgMTIiPgogIDxkZWZzPgogICAgPHN0eWxlPgogICAgICAuY2xzLTEgewogICAgICAgIGZpbGw6ICMwMDA7CiAgICAgICAgZmlsdGVyOiB1cmwoI2NvbG9yLW92ZXJsYXktMSk7CiAgICAgICAgb3BhY2l0eTogMC41OwogICAgICAgIGZpbGwtcnVsZTogZXZlbm9kZDsKICAgICAgfQogICAgPC9zdHlsZT4KCiAgICA8ZmlsdGVyIGlkPSJjb2xvci1vdmVybGF5LTEiIGZpbHRlclVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+CiAgICAgIDxmZUZsb29kIGZsb29kLWNvbG9yPSIjMzI0MjRmIi8+CiAgICAgIDxmZUNvbXBvc2l0ZSBvcGVyYXRvcj0iaW4iIGluMj0iU291cmNlR3JhcGhpYyIvPgogICAgICA8ZmVCbGVuZCBpbjI9IlNvdXJjZUdyYXBoaWMiIHJlc3VsdD0ic29saWRGaWxsIi8+CiAgICA8L2ZpbHRlcj4KICA8L2RlZnM+CiAgPHBhdGggZD0iTTEwLjAwMCwzLjAwMSBMMTAuMDAwLDEyLjAwMSBMMS4wMDAsMTIuMDAxIEwxLjAwMCwzLjAwMSBMMC4wMDAsMy4wMDEgTDAuMDAwLDIuMDAxIEwzLjAwMCwyLjAwMSBMMy4wMDAsMS4wMDEgTDMuMDAwLDAuMDAxIEw0LjAwMCwwLjAwMSBMNy4wMDAsMC4wMDEgTDguMDAwLDAuMDAxIEw4LjAwMCwxLjAwMSBMOC4wMDAsMi4wMDEgTDExLjAwMCwyLjAwMSBMMTEuMDAwLDMuMDAxIEwxMC4wMDAsMy4wMDEgWk01LjAwMCwxMC4wMDEgTDYuMDAwLDEwLjAwMSBMNi4wMDAsNC4wMDEgTDUuMDAwLDQuMDAxIEw1LjAwMCwxMC4wMDEgWk0zLjAwMCw0LjAwMSBMMy4wMDAsMTAuMDAxIEw0LjAwMCwxMC4wMDEgTDQuMDAwLDQuMDAxIEwzLjAwMCw0LjAwMSBaTTcuMDAwLDEuMDAxIEw0LjAwMCwxLjAwMSBMNC4wMDAsMi4wMDEgTDcuMDAwLDIuMDAxIEw3LjAwMCwxLjAwMSBaTTguMDAwLDQuMDAxIEw3LjAwMCw0LjAwMSBMNy4wMDAsMTAuMDAxIEw4LjAwMCwxMC4wMDEgTDguMDAwLDQuMDAxIFoiIGNsYXNzPSJjbHMtMSIvPgo8L3N2Zz4K) no-repeat center center;
+  display: block;
+  position: absolute;
+  right: 21px;
+  top: 8px;
+  cursor: pointer;
+}
+
+.amoforms .amoforms__fields__edit__row__options__add-wrapper {
+  margin: 15px 70px 0 0;
+}
+.amoforms .amoforms__fields__edit__row__options__add {
+  text-align: center;
+  border: 1px dashed #32424f;
+  line-height: 34px;
+  border-radius: 2px;
+  cursor: pointer;
+  background: none;
+  width: 100%;
+}
+.amoforms .amoforms__fields__edit__row__options__add:focus {
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.4);
+}
+.amoforms .amoforms__fields__edit__row__options__add span {
+  position: relative;
+  padding-left: 22px;
+}
+.amoforms .amoforms__fields__edit__row__options__add span:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 19px;
+  height: 19px;
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNy4xLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9Ikljb25zIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCINCgkgdmlld0JveD0iMCAwIDE1IDE1IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAxNSAxNSIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8cGF0aCBkPSJNNy41LDBDMy40LDAsMCwzLjQsMCw3LjVDMCwxMS42LDMuNCwxNSw3LjUsMTVjNC4xLDAsNy41LTMuNCw3LjUtNy41QzE1LDMuNCwxMS42LDAsNy41LDB6IE03LjUsMTMuOQ0KCUM0LDEzLjksMS4xLDExLDEuMSw3LjVDMS4xLDQsNCwxLjEsNy41LDEuMWMzLjUsMCw2LjQsMi45LDYuNCw2LjRDMTMuOSwxMSwxMSwxMy45LDcuNSwxMy45eiIvPg0KPHBvbHlnb24gcG9pbnRzPSI4LjUsNC4zIDYuNCw0LjMgNi40LDYuNCA0LjIsNi40IDQuMiw4LjUgNi40LDguNSA2LjQsMTAuNiA4LjUsMTAuNiA4LjUsOC41IDEwLjYsOC41IDEwLjYsNi40IDguNSw2LjQgIi8+DQo8L3N2Zz4NCg==) center no-repeat;
+}
+
+.amoforms__styles__edit-modal{
+  min-height: 770px;
+}
+
+.amoforms .amoforms__fields__edit__actions {
+  position: inherit !important;
+  margin-top: 30px;
+}
+
+.amoforms .amoforms__settings-modal .amoforms__fields__edit__actions {
+  margin-top: 20px;
+}
+.amoforms p.amoforms__file_filetypes_help {
+  padding: 10px 5px;
+  font-size: 13px;
+  color: #676e79;
+  font-style: italic;
+}
+.amoforms .error {
+  border-color: red !important;
+}
+.amoforms .style_wrapper {
+  width: 45%;
+  display: inline-block;
+  margin: 0 10px;
+}
+.amoforms .amoforms__styles_editor__visual_wrapper {
+  display: inline-block;
+  margin: 30px 10px;
+  font-size: 12px;
+  max-height: 210px;
+  max-width: 300px;
+  float: right;
+}
+.amoforms #submit_button.amoforms__styles_editor__visual_wrapper{
+  margin: 30px 65px 30px 0;
+}
+.amoforms .amoforms__styles_editor__visual_wrapper .amoforms__fields__edit__descr {
+  font-size: 15px;
+  margin-top: 0;
+}
+.amoforms .amoforms__styles_editor__colors_wrapper {
+  display: inline-block;
+  float: left;
+  width: 30%;
+  padding: 10px 0 0 10px;
+}
+.amoforms .amoforms__styles_editor__colors_wrapper .amoforms__fields__edit__descr {
+  margin-top: 20px;
+}
+@media (max-width: 1200px){
+  .amoforms .amoforms__styles_editor__visual_wrapper{
+    display: block;
+    float: left;
+  }
+  .amoforms .amoforms__styles_editor__colors_wrapper {
+    display: block;
+    clear: both;
+    width: 100%;
+    padding: 10px 0 0 10px;
+  }
+  .amoforms .amoforms__styles_editor_colorsettings {
+    display: inline-block;
+    width: 31%;
+  }
+  .amoforms .amoforms__styles_editor_colorsettings .amoforms__fields__edit__descr{
+    width: 120px;
+    margin: 5px 0;
+  }
+  .amoforms .amoforms__styles_editor__colors_wrapper .amoforms__text-input.amoforms__colorsetting{
+    width: 50% !important;
+  }
+}
+@media (max-width: 1024px) and (min-width: 960px){
+  .amoforms .amoforms__styles_editor__visual_wrapper{
+    margin: 30px 0 30px -20px;
+  }
+}
+@media (max-width: 910px) {
+  .amoforms .amoforms__styles_editor__visual_wrapper{
+    margin: 30px 0 30px -20px;
+  }
+}
+.amoforms .amoforms__styles_editor__margin {
+  height: 210px;
+  width: 300px;
+  background-color: #F9CC9D;
+  border: 1px dashed #333;
+
+}
+.amoforms .amoforms__styles_editor__border {
+  position: relative;
+  top: -180px;
+  left: 40px;
+  height: 150px;
+  width: 220px;
+  background-color: #FDDD9B;
+  border: 1px solid #333;
+}
+.amoforms .amoforms__styles_editor__padding {
+  position: relative;
+  top: -300px;
+  left: 75px;
+  height: 90px;
+  width: 150px;
+  background-color: #C2CF8A;
+  border: 1px dashed #333;
+}
+.amoforms .amoforms__styles_editor__field {
+  position: relative;
+  top: -360px;
+  left: 110px;
+  height: 30px;
+  width: 80px;
+  background-color: #8BB5C0;
+  padding: 5px 0 0 14px;
+  border: 1px solid #858585;
+}
+.amoforms .amoforms__styles_editor__label {
+  float: left;
+  margin-left: 3px;
+}
+.amoforms .amoforms__styles_editor__opacity {
+  background-color: #fff !important;
+}
+
+.amoforms .amoforms__styles_editor_input{
+  background-color: transparent;
+  width: 30px;
+  text-align: center;
+}
+.amoforms .amoforms__styles_editor_input:focus,
+.amoforms .amoforms__styles_editor_input:active{
+  background-color: #fff;
+}
+.amoforms .margin-top{
+  position: relative;
+  top: 5px;
+  left: 93px;
+}
+.amoforms .margin-bottom{
+  position: relative;
+  top: 184px;
+  left: 25px;
+}
+.amoforms .margin-left{
+  position: relative;
+  top: 96px;
+  left: -134px;
+}
+.amoforms .margin-right{
+  position: relative;
+  top: 96px;
+  left: 191px;
+}
+.amoforms .border-top{
+  position: relative;
+  top: 5px;
+  left: 55px;
+}
+.amoforms .border-bottom{
+  position: relative;
+  top: 124px;
+  left: -14px;
+}
+.amoforms .border-left{
+  position: relative;
+  top: 66px;
+  left: -135px;
+}
+.amoforms .border-right{
+  position: relative;
+  top: 66px;
+  left: 116px;
+}
+.amoforms .padding-top{
+  position: relative;
+  top: 5px;
+  left: 13px;
+}
+.amoforms .padding-bottom{
+  position: relative;
+  top: 65px;
+  left: -56px;
+}
+.amoforms .padding-left{
+  position: relative;
+  top: 18px;
+  left: 2px;
+}
+.amoforms .padding-right{
+  position: relative;
+  top: 36px;
+  left: 38px;
+}

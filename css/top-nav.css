@@ -1,0 +1,55 @@
+.amoforms .amoforms__top-nav {
+  border-bottom: 1px solid #bebfc1;
+  margin-bottom: 23px;
+  font-size: 0;
+}
+
+.amoforms .amoforms__top-nav__item {
+  display: inline-block;
+  font-size: 18px;
+  margin-right: 33px;
+  margin-top: 15px;
+  padding: 0 10px 11px;
+  color: #2a3640;
+  position: relative;
+}
+
+.amoforms .amoforms__top-nav__item.active {
+  font-weight: 900;
+  margin-right: 34px;
+}
+
+.amoforms .amoforms__top-nav__item.active:after {
+  content: "";
+  border-bottom: 4px solid #2e9fe3;
+  width: 100%;
+  position: absolute;
+  top: 28px;
+  left: 0;
+}
+
+/*
+ * Messages (success & error)
+ */
+.amoforms .amoforms__message {
+  margin: 5px 0 15px;
+  display: none;
+  background: #fff;
+  border-left: 4px solid #fff;
+  -webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .1);
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .1);
+  padding: 1px 12px;
+
+}
+.amoforms .amoforms__message p {
+  font-size: 13px;
+  line-height: 1.5;
+  margin: .5em 0;
+  padding: 2px;
+}
+.amoforms .amoforms__success_message {
+  border-color: #7ad03a;
+}
+.amoforms .amoforms__error_message {
+  border-color: #f00;
+}

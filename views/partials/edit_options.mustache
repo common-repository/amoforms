@@ -1,0 +1,29 @@
+<div class="amoforms__fields__edit__row">
+	<div class="amoforms__fields__edit__descr">Options</div>
+	<div class="amoforms__fields__edit__row__options">
+		{{#field.enums}}
+		<div class="amoforms__fields__edit__row__options__item">
+			<input type="text" class="amoforms__text-input amoforms__fields__edit__input js-is-required " name="field[enums][{{.}}]" placeholder="Name" value="{{.}}">
+			<span class="amoforms__fields__edit__row__options__item__move"></span>
+			<span class="amoforms__fields__edit__row__options__item__trash"></span>
+		</div>
+		{{/field.enums}}
+
+		<div class="amoforms__fields__edit__row__options__item">
+			<input type="text" class="amoforms__text-input amoforms__fields__edit__input js-is-required " name="field[enums][1]" placeholder="Name">
+			<span class="amoforms__fields__edit__row__options__item__move"></span>
+			<span class="amoforms__fields__edit__row__options__item__trash"></span>
+		</div>
+
+		{{^field.enums}}
+		<div class="amoforms__fields__edit__row__options__item">
+			<input type="text" class="amoforms__text-input amoforms__fields__edit__input js-is-required " name="field[enums][2]" placeholder="Name">
+			<span class="amoforms__fields__edit__row__options__item__move"></span>
+			<span class="amoforms__fields__edit__row__options__item__trash"></span>
+		</div>
+		{{/field.enums}}
+	</div>
+	<div class="amoforms__fields__edit__row__options__add-wrapper">
+		<button class="amoforms__fields__edit__row__options__add"><span>Add Option</span></button>
+	</div>
+</div>

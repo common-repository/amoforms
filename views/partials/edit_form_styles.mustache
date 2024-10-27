@@ -1,0 +1,32 @@
+{{#form_style}}
+    {{#elements}}
+        <div class="amoforms__styles__expander">
+            {{#form_container}}
+                <div class="amoforms__fields__expander__item">
+                    <div class="amoforms__fields__expander__item__head">
+                        <p class="amoforms__fields__expander__item__head__text">Form Container</p>
+                    </div>
+
+                    <div class="amoforms__fields__expander__item__content">
+                        <div class="amoforms__fields__expander__item__content__inner">
+                            {{> style_form_container }}
+                        </div>
+                    </div>
+                </div>
+            {{/form_container}}
+            {{#form_row}}
+                <div class="amoforms__fields__expander__item">
+                    <div class="amoforms__fields__expander__item__head">
+                        <p class="amoforms__fields__expander__item__head__text">Form Row</p>
+                    </div>
+
+                    <div class="amoforms__fields__expander__item__content">
+                        <div class="amoforms__fields__expander__item__content__inner">
+                            {{> style_form_row }}
+                        </div>
+                    </div>
+                </div>
+            {{/form_row}}
+        </div>
+    {{/elements}}
+{{/form_style}}

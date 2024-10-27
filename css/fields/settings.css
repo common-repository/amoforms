@@ -1,0 +1,603 @@
+.amoforms__fields__settings {
+  position: relative;
+}
+
+.amoforms .amoforms__fields__settings__btn,
+.amoforms .amoforms__style_background {
+  border: 1px solid rgb(212, 213, 216);
+  border-radius: 3px;
+  background-color: rgb(250, 250, 250);
+  color: #32424f;
+  cursor: pointer;
+  font-size: 12px;
+  height: 34px;
+  vertical-align: top;
+  margin-right: 10px;
+  margin-bottom: 15px;
+}
+.amoforms .amoforms__style_background{
+  height: 38px;
+  margin-bottom: 0;
+}
+.amoforms .amoforms__fields__settings__btn:last-child {
+  margin-right: 0;
+}
+.amoforms .amoforms__fields__settings__btn[data-type="themes"]{
+  width: 81px;
+  text-align: left;
+  line-height: 14px;
+}
+.amoforms .amoforms__fields__settings__btn[data-type="form-css"]{
+  width: 125px;
+  text-align: left;
+}
+.amoforms .amoforms__fields__settings__btn[data-type="form-paddings"],
+.amoforms .amoforms__fields__settings__btn[data-type="field-form"],
+.amoforms .amoforms__fields__settings__btn[data-type="name-position"] {
+  width: 100px;
+  text-align: left;
+  line-height: 13px;
+}
+.amoforms .amoforms__fields__settings__btn[data-type="font"] b,
+.amoforms .amoforms__fields__settings__btn[data-type="form-paddings"] b,
+.amoforms .amoforms__fields__settings__btn[data-type="field-form"] b,
+.amoforms .amoforms__fields__settings__btn[data-type="themes"] b,
+.amoforms .amoforms__fields__settings__btn[data-type="name-position"] b {
+  display: inline-block;
+  width: 42px;
+  float: left;
+  margin-top: 3px;
+}
+
+.amoforms .amoforms__fields__settings__btn[data-type="form-css"] b {
+  display: inline-block;
+  width: 80px;
+  float: left;
+  margin-top: 2px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 26px;
+}
+
+.amoforms .amoforms__fields__settings__btn[data-type="form-paddings"] i,
+.amoforms .amoforms__fields__settings__btn[data-type="field-form"] i,
+.amoforms .amoforms__fields__settings__btn[data-type="themes"] i,
+.amoforms .amoforms__fields__settings__btn[data-type="form-css"] i,
+.amoforms .amoforms__fields__settings__btn[data-type="name-position"] i {
+  display: inline-block;
+  height: 33px;
+  vertical-align: middle;
+  border-right: 1px solid #d4d5d8;
+  width: 38px;
+  position: relative;
+  float: left;
+  margin-right: 10px;
+}
+.amoforms .amoforms__fields__settings__btn[data-type="name-position"] i:before {
+  content: "Text";
+  position: absolute;
+  top: 11px;
+  left: 4px;
+  font-size: 9px;
+  color: #2a3640;
+}
+.amoforms .amoforms__fields__settings__btn[data-type="name-position"] i:after {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 16px;
+  background: #fff;
+  border: 1px solid #cccfd7;
+  top: 8px;
+  right: -1px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.amoforms .amoforms__fields__settings__btn[data-type="field-form"] {
+  width: 79px;
+}
+.amoforms .amoforms__fields__settings__btn[data-type="field-form"] b {
+  width: 29px;
+}
+.amoforms .amoforms__fields__settings__btn[data-type="field-form"] i {
+  width: 28px;
+  border-right: 0;
+  margin-right: 9px;
+}
+.amoforms .amoforms__fields__settings__btn[data-type="field-form"] i:after,
+.amoforms .amoforms__fields__settings__btn[data-type="field-form"] i:before {
+  content: "";
+  width: 16px;
+  height: 6px;
+  border: 1px solid #313942;
+  position: absolute;
+  top: 7px;
+  left: 9px;
+}
+.amoforms .amoforms__fields__settings__btn[data-type="field-form"] i:after {
+  border-radius: 3px;
+  top: 18px;
+}
+
+.amoforms .amoforms__fields__settings__btn[data-type="form-paddings"] {
+  width: 75px;
+}
+.amoforms .amoforms__fields__settings__btn[data-type="form-paddings"] b {
+  margin-top: 11px;
+  float: left;
+  width: 29px;
+}
+.amoforms .amoforms__fields__settings__btn[data-type="form-paddings"] i {
+  width: 24px;
+  border-right: 0;
+  margin-right: 7px;
+  height: 33px;
+  background-size: 16px;
+  background-position: 8px center;
+  background-repeat: no-repeat;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJJc29sYXRpb25fTW9kZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4Ig0KCSB5PSIwcHgiIHZpZXdCb3g9IjAgMCAxNiAxMyIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMTYgMTMiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPHBvbHlnb24gcG9pbnRzPSIxNSwxMiAxMiwxMiAxMiwxMyAxNiwxMyAxNiw5IDE1LDkgIi8+DQo8cG9seWdvbiBwb2ludHM9IjEsMSA0LDEgNCwwIDAsMCAwLDQgMSw0ICIvPg0KPHBvbHlnb24gcG9pbnRzPSIxMiwwIDEyLDEgMTUsMSAxNSw0IDE2LDQgMTYsMCAiLz4NCjxwb2x5Z29uIHBvaW50cz0iMSw5IDAsOSAwLDEzIDQsMTMgNCwxMiAxLDEyICIvPg0KPHJlY3QgeD0iMy4zIiB5PSIzLjIiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzAwMDAwMCIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiB3aWR0aD0iOS41IiBoZWlnaHQ9IjYuOCIvPg0KPC9zdmc+DQo=);
+}
+.amoforms .amoforms__fields__settings__btn[data-type="themes"] i {
+  width: 24px;
+  border-right: 0;
+  margin-right: 7px;
+  height: 33px;
+  background-size: 16px;
+  background-position: 8px center;
+  background-repeat: no-repeat;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJJY29ucyIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMCIgeT0iMCINCgkgdmlld0JveD0iMCAwIDE2IDEzIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAxNiAxMyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8Zz4NCgk8cmVjdCB4PSI2IiB3aWR0aD0iMTAiIGhlaWdodD0iNyIvPg0KCTxwb2x5Z29uIHBvaW50cz0iNSwzIDMsMyAzLDEwIDEzLDEwIDEzLDggNSw4IAkiLz4NCgk8cG9seWdvbiBwb2ludHM9IjIsNiAwLDYgMCwxMyAxMCwxMyAxMCwxMSAyLDExIAkiLz4NCjwvZz4NCjwvc3ZnPg0K);
+}
+.amoforms .amoforms__fields__settings__btn[data-type="form-css"] i {
+  width: 30px;
+  height: 30px;
+  border-right: 0;
+  margin-right: 7px;
+  background-size: 21px;
+  background-position: 8px center;
+  background-repeat: no-repeat;
+  background-image: url(../../images/fields.png);
+}
+.amoforms .amoforms__fields__settings__btn[data-type="font"] {
+  width: 59px;
+}
+.amoforms .amoforms__fields__settings__btn[data-type="font"] b {
+  width: 29px;
+  margin-top: 7px;
+}
+.amoforms .amoforms__fields__settings__btn[data-type="font"] i {
+  background-repeat: no-repeat;
+  width: 23px;
+  height: 30px;
+  display: inline-block;
+  background-size: 13px;
+  background-position: 7px 7px;
+  float: left;
+}
+
+.amoforms .amoforms__fields__settings__btn[data-type="background-color"] {
+  display: inline-block;
+  padding: 8px 10px;
+  border-right: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  margin-right: 0;
+}
+.amoforms .amoforms__fields__settings__btn[data-type="background-color"] b {
+  width: 30px;
+  font-size: 12px;
+  margin-right: 6px;
+}
+.amoforms .amoforms__fields__settings__btn[data-type="background-color"] span {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #cfd6dd;
+  border-radius: 2px;
+  background-color: #fff;
+  vertical-align: top;
+}
+
+.amoforms .amoforms__fields__settings__btn[data-type="background-image"] {
+  width: 35px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.amoforms .amoforms__style_background[data-type="background-image"] {
+  width: 40px;
+}
+.amoforms .amoforms__fields__settings__btn[data-type="background-image"] i,
+.amoforms .amoforms__style_background[data-type="background-image"] i {
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJ4TWlkWU1pZCIgd2lkdGg9IjE2IiBoZWlnaHQ9IjE2IiB2aWV3Qm94PSIwIDAgMTYgMTYiPgogIDxwYXRoIGZpbGw9IiM2NzZlN2EiIGQ9Ik0xNC4wMDAsMTYuMDAwIEwyLjAwMCwxNi4wMDAgQzAuODk2LDE2LjAwMCAwLjAwMCwxNS4xMDUgMC4wMDAsMTQuMDAwIEwwLjAwMCwyLjAwMCBDMC4wMDAsMC44OTYgMC44OTYsMC4wMDAgMi4wMDAsMC4wMDAgTDE0LjAwMCwwLjAwMCBDMTUuMTA1LDAuMDAwIDE2LjAwMCwwLjg5NiAxNi4wMDAsMi4wMDAgTDE2LjAwMCwxNC4wMDAgQzE2LjAwMCwxNS4xMDUgMTUuMTA1LDE2LjAwMCAxNC4wMDAsMTYuMDAwIFpNMTUuMDAwLDIuMDAwIEMxNS4wMDAsMS40NDggMTQuNTUyLDEuMDAwIDE0LjAwMCwxLjAwMCBMMi4wMDAsMS4wMDAgQzEuNDQ4LDEuMDAwIDEuMDAwLDEuNDQ4IDEuMDAwLDIuMDAwIEwxLjAwMCw4LjAwMCBMNC4wMDAsNi4wMDAgTDkuMDAwLDEwLjAwMCBMMTEuMDAwLDkuMDAwIEwxNS4wMDAsMTMuMDAwIEwxNS4wMDAsMi4wMDAgWk0xMS4wMDAsMTAuMzEzIEw5LjAwMCwxMS4zMTMgTDQuMDAwLDcuMzEzIEwxLjAwMCw5LjMxMyBMMS4wMDAsMTUuMDAwIEwxNS4wMDEsMTQuOTg5IEwxNS4wMDAsMTQuMzEzIEwxMS4wMDAsMTAuMzEzIFpNMTAuMDAwLDQuNTAwIEMxMC4wMDAsMy42NzIgMTAuNjcyLDMuMDAwIDExLjUwMCwzLjAwMCBDMTIuMzI5LDMuMDAwIDEzLjAwMCwzLjY3MiAxMy4wMDAsNC41MDAgQzEzLjAwMCw1LjMyOSAxMi4zMjksNi4wMDAgMTEuNTAwLDYuMDAwIEMxMC42NzIsNi4wMDAgMTAuMDAwLDUuMzI5IDEwLjAwMCw0LjUwMCBaIiBjbGFzcz0iY2xzLTEiLz4KPC9zdmc+Cg==);
+  width: 100%;
+  height: 100%;
+  display: block;
+  background-repeat: no-repeat;
+  background-position: 8px 9px;
+}
+.amoforms .amoforms__style_background[data-type="background-image"] i {
+  background-position: 11px 9px;
+}
+.amoforms .amoforms__fields__settings__btn.fs {
+  display: inline-block;
+  width: 100px;
+  font-size: 16px;
+  background-color: transparent;
+  border: 1px solid rgb(63, 157, 212);
+}
+.amoforms .amoforms__fields__settings__btn.fs:active {
+  transform: none;
+}
+.amoforms .amoforms__fields__settings__btn.fs.pressed {
+  display: inline-block;
+  width: 100px;
+  font-size: 16px;
+  background-color: rgba(46, 149, 209, 0.91);
+  color: #FFF;
+}
+.amoforms .amoforms__fields__settings__btn.fs[data-type="field-settings"] {
+  margin-right: -5px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.amoforms .amoforms__fields__settings__btn.fs[data-type="field-styles"] {
+  margin-left: 0;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.amoforms .amoforms__settings-modal {
+  background-color: #fafafa;
+  box-shadow: 2.5px 4.33px 9.4px 0.6px rgba(0, 0, 1, 0.2);
+  border-radius: 3px;
+  position: relative;
+}
+.amoforms__settings-modal:before {
+  content: "";
+  position: absolute;
+  top: -7px;
+  left: 50%;
+  margin-left: -6px;
+
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 6px 7px 6px;
+  border-color: transparent transparent #fafafa transparent;
+}
+.amoforms__setting-modal-font {
+  width: 180px;
+}
+.amoforms .amoforms__settings-modal__font-family {
+  padding: 6px 0;
+  font-size: 15px;
+}
+.amoforms .amoforms__settings-modal__font-family li {
+  padding: 6px 17px;
+}
+.amoforms .amoforms__settings-modal__font-family li.selected {
+  color: #2e9fe3;
+}
+.amoforms .amoforms__settings-modal__font-family li:hover {
+  background-color: #2a9dde;
+  color: #fff !important;
+  cursor: pointer;
+}
+.amoforms .amoforms__settings-modal__font-size {
+  border-top: 1px solid #d7d8db;
+  padding: 10px;
+}
+.amoforms .amoforms__settings-modal__font-size .amoforms__size-btn-minus {
+  float: left;
+}
+.amoforms .amoforms__settings-modal__font-size__input {
+  float: left;
+  width: 80px;
+  min-height: 30px;
+  line-height: 28px !important;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.amoforms .amoforms__settings-modal__font-size .amoforms__size-btn-plus {
+  float: right;
+}
+
+.amoforms.amoforms__setting-modal-form-paddings {
+  width: 182px;
+}
+.amoforms.amoforms__setting-modal-form-paddings .amoforms__settings-modal {
+  padding: 19px;
+}
+.amoforms__setting-modal-form-paddings__btn:after {
+  content: "";
+  width: 47px;
+  height: 42px;
+  position: absolute;
+  top: 9px;
+  left: 8px;
+}
+.amoforms__setting-modal-form-paddings__btn[data-type="yes"]:after {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC8AAAAqCAIAAACsiJVIAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyhpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMDY3IDc5LjE1Nzc0NywgMjAxNS8wMy8zMC0yMzo0MDo0MiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTUgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6MkQ5RDk3OTA0MzMzMTFFNTg0NEI4MkZBMzY5OEU1MDIiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6MkQ5RDk3OTE0MzMzMTFFNTg0NEI4MkZBMzY5OEU1MDIiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpGOURFMDYzNTQyREExMUU1ODQ0QjgyRkEzNjk4RTUwMiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpGOURFMDYzNjQyREExMUU1ODQ0QjgyRkEzNjk4RTUwMiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Pn5y2/kAAAC6SURBVHja7JXRCoIwFIZzNoMUox6qCykCHzQIuokueqNiakIOWz8I0o2ClJyC/7/c2M63wxmf55zLsqK4l3X9nAjF91UUzuM48ozJH5VdLRdYkqJBI643Mwu0QldkUZregAEkClyyKC0QSOQ53kOa7ky7NvaH43hV091mGE3PmQ/T807ODWm++qeQytpfodE6OJ0vY5TEzYNptsmaU0wz0AycYpqBZqAZaAaagVNMM9AMNANp/p/mJcAAKexI1aRyb0AAAAAASUVORK5CYII=);
+}
+.amoforms__setting-modal-form-paddings__btn[data-type="no"]:after {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC8AAAAqCAIAAACsiJVIAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyhpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMDY3IDc5LjE1Nzc0NywgMjAxNS8wMy8zMC0yMzo0MDo0MiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTUgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6MkQ5RDk3OTQ0MzMzMTFFNTg0NEI4MkZBMzY5OEU1MDIiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6MkQ5RDk3OTU0MzMzMTFFNTg0NEI4MkZBMzY5OEU1MDIiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDoyRDlEOTc5MjQzMzMxMUU1ODQ0QjgyRkEzNjk4RTUwMiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDoyRDlEOTc5MzQzMzMxMUU1ODQ0QjgyRkEzNjk4RTUwMiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PgoQyWMAAADDSURBVHja7NUxCsIwFMZxkzYKWiLt5KA3EgTP5+DkHYqid7EFnVoSq2BDjQ8EcXERIW/4HoRApx+PlL/w3lvbNNdb1z16gSaKZDIaap0IYy731mXpmD6F0tAiqtoM+krSVsJSXrshA0kkucJS3iCShHd8DjTfJ853+yzVHChVbWO6los5B81qvcG7geanf4pO6xwXjVIq3x44UEgijsVpNp1w0BTlGa8YZUAZoEEZUAaUAWVAGaBBGVAGlAGaf89TgAEAryZdOQh8y4gAAAAASUVORK5CYII=);
+}
+.amoforms.amoforms__setting-modal-field-size .amoforms__size-btn-minus {
+  margin-right: 15px;
+}
+
+.amoforms.amoforms__setting-modal-field-form {
+  width: 182px;
+}
+.amoforms.amoforms__setting-modal-themes .amoforms__settings-modal,
+.amoforms.amoforms__setting-modal-form-css .amoforms__settings-modal,
+.amoforms.amoforms__setting-modal-background-image .amoforms__settings-modal,
+.amoforms.amoforms__setting-modal-name-position .amoforms__settings-modal,
+.amoforms.amoforms__setting-modal-field-form .amoforms__settings-modal {
+  padding: 20px 19px 15px 19px;
+}
+.amoforms .amoforms__setting-modal-form-paddings__btn:first-child,
+.amoforms .amoforms__setting-modal-field-form__btn:first-child {
+  margin-right: 20px;
+}
+.amoforms .amoforms__setting-modal-form-paddings__btn,
+.amoforms .amoforms__setting-modal-name-position__btn,
+.amoforms .amoforms__setting-modal-field-form__btn {
+  padding-top: 60px;
+  width: 62px;
+  position: relative;
+  text-align: center;
+  color: #2a3640;
+  cursor: pointer;
+}
+.amoforms .amoforms__setting-modal-form-paddings__btn.selected,
+.amoforms .amoforms__setting-modal-name-position__btn.selected,
+.amoforms .amoforms__setting-modal-field-form__btn.selected {
+  color: #2e9fe3;
+}
+.amoforms .amoforms__setting-modal-form-paddings__btn:before,
+.amoforms .amoforms__setting-modal-name-position__btn:before,
+.amoforms .amoforms__setting-modal-field-form__btn:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 50px;
+  border: 1px solid #e2e3e7;
+  border-radius: 3px;
+  background-color: #fff;
+  position: absolute;
+}
+.amoforms .amoforms__setting-modal-form-paddings__btn:hover:before,
+.amoforms .amoforms__setting-modal-form-paddings__btn.selected:before,
+.amoforms .amoforms__setting-modal-name-position__btn:hover:before,
+.amoforms .amoforms__setting-modal-name-position__btn.selected:before,
+.amoforms .amoforms__setting-modal-field-form__btn:hover:before,
+.amoforms .amoforms__setting-modal-field-form__btn.selected:before {
+  border-color: #2e9fe3;
+}
+.amoforms .amoforms__setting-modal-field-form__btn:after {
+  content: "";
+  position: absolute;
+  width: 35px;
+  height: 30px;
+  border: 1px solid #e2e3e7;
+  border-right: 0;
+  top: 10px;
+  right: 1px;
+}
+.amoforms .amoforms__setting-modal-field-form__btn[data-type="rounded"]:after {
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.amoforms.amoforms__setting-modal-name-position {
+  width: 264px;
+}
+.amoforms .amoforms__setting-modal-name-position__btn:not(:last-child) {
+  margin-right: 20px;
+}
+.amoforms .amoforms__setting-modal-name-position__btn b {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.amoforms .amoforms__setting-modal-name-position__btn b:before {
+  content: "Text";
+  font-size: 12px;
+  position: absolute;
+  color: #2a3640;
+}
+.amoforms .amoforms__setting-modal-name-position__btn[data-type="before"] b:before {
+  top: 17px;
+  left: 9px;
+}
+.amoforms .amoforms__setting-modal-name-position__btn[data-type="above"] b:before {
+  top: 2px;
+  left: 16px;
+}
+.amoforms .amoforms__setting-modal-name-position__btn[data-type="inside"] b:before {
+  top: 17px;
+  left: 21px;
+}
+.amoforms .amoforms__setting-modal-name-position__btn b:after {
+  content: "";
+  position: absolute;
+  border: 1px solid #e2e3e7;
+  border-right: 0;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+.amoforms .amoforms__setting-modal-name-position__btn[data-type="before"] b:after {
+  width: 25px;
+  height: 20px;
+  top: 16px;
+  right: 1px;
+}
+.amoforms .amoforms__setting-modal-name-position__btn[data-type="above"] b:after {
+  width: 46px;
+  height: 20px;
+  top: 20px;
+  right: 1px;
+}
+.amoforms .amoforms__setting-modal-name-position__btn[data-type="inside"] b:after {
+  width: 46px;
+  height: 20px;
+  top: 15px;
+  right: 1px;
+}
+
+.amoforms__settings-modal__background-image__title .title-right-clear {
+  font-style: italic;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 1280px) {
+  .amoforms__setting-modal-background-image {
+    width: 618px !important;
+  }
+  .amoforms__settings-modal__background-image__title {
+    text-align: left !important;
+  }
+
+  .amoforms__settings-modal__background-image__title .title-left {
+    float: left;
+    text-align: left;
+  }
+
+  .amoforms__settings-modal__background-image__title .title-right-clear {
+    float: right;
+    text-align: right;
+  }
+
+  .amoforms__setting-modal-background-image .amoforms__settings-modal {
+    padding: 20px 19px 0 19px !important;
+  }
+  .amoforms__setting-modal-background-image .amoforms__settings-modal:before {
+    margin-left: 0 !important;
+    left: 594px !important;
+    right: 25px !important;
+  }
+  .amoforms .amoforms__settings-modal__background-image__wrapper li {
+    float: left !important;
+    margin-left: 20px !important;
+    margin-bottom: 20px !important;
+    margin-top: 0 !important;
+  }
+  .amoforms .amoforms__settings-modal__background-image__wrapper li:nth-child(5n + 1) {
+    margin-left: 0 !important;
+  }
+}
+#background-dropzone {
+
+}
+#background-dropzone .dz-message {
+  height: 92px;
+  line-height: 92px;
+  text-align: center;
+}
+#background-dropzone .dz-message span {
+  color: #32424f;
+  font-size: 12px;
+}
+.amoforms.amoforms__setting-modal-background-image {
+  width: 260px;
+}
+.amoforms .amoforms__settings-modal__background-image__title {
+  font-size: 15px;
+  color: #2a3640;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.amoforms .amoforms__settings-modal__background-image__wrapper {
+  font-size: 0;
+  overflow: hidden;
+}
+.amoforms .amoforms__settings-modal__background-image__wrapper li img {
+  width: 92px;
+  height: 92px;
+}
+.amoforms .amoforms__settings-modal__background-image__wrapper li {
+  float: left;
+  width: 100px;
+  height: 100px;
+  margin-top: 14px;
+  padding: 3px;
+  border: 1px solid #d0d2d9;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.amoforms .amoforms__settings-modal__background-image__wrapper li:first-child,
+.amoforms .amoforms__settings-modal__background-image__wrapper li:nth-child(2) {
+  margin-top: 0;
+}
+.amoforms .amoforms__settings-modal__background-image__wrapper li:nth-child(2n) {
+  margin-left: 20px;
+}
+.amoforms .amoforms__settings-modal__background-image__wrapper li.selected,
+.amoforms .amoforms__settings-modal__background-image__wrapper li:hover {
+  border-color: #2e9fe3;
+}
+
+.amoforms .amoforms__settings-modal__background-image__wrapper li:hover .js-background-clear {
+  visibility: visible;
+}
+
+.amoforms.amoforms__setting-modal-form-css,
+.amoforms.amoforms__setting-modal-themes {
+  width: 678px;
+}
+.amoforms.amoforms__setting-modal-form-css .amoforms__settings-modal:before,
+.amoforms.amoforms__setting-modal-themes .amoforms__settings-modal:before {
+  left: 50px;
+}
+.amoforms .amoforms__settings-modal__themes__wrapper {
+  font-size: 0;
+}
+.amoforms .amoforms__settings-modal__themes__wrapper li img {
+  width: 192px;
+  height: 212px;
+}
+.amoforms .amoforms__settings-modal__themes__wrapper li {
+  display: inline-block;
+  width: 200px;
+  height: 220px;
+  margin-top: 14px;
+  padding: 3px;
+  border: 1px solid #d0d2d9;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-right: 20px;
+}
+.amoforms .amoforms__settings-modal__themes__wrapper li:first-child,
+.amoforms .amoforms__settings-modal__themes__wrapper li:nth-child(2),
+.amoforms .amoforms__settings-modal__themes__wrapper li:nth-child(3) {
+  margin-top: 0;
+}
+.amoforms .amoforms__settings-modal__themes__wrapper li:nth-child(3n) {
+  margin-right: 0;
+}
+.amoforms .amoforms__settings-modal__themes__wrapper li.selected,
+.amoforms .amoforms__settings-modal__themes__wrapper li:hover {
+  border-color: #2e9fe3;
+}
+
+#wpbody-content {
+  padding-bottom: 40px;
+}
+
+.amoforms-account {
+  margin-bottom: 52px;
+}
+
+.amoforms.amoforms-test {
+  margin-bottom: 52px;
+}
+
+.dashicons-admin-generic:before {
+  content: "\f175";
+}

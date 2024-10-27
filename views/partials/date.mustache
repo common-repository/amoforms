@@ -1,0 +1,17 @@
+<div class="amoforms__date">
+	<input
+            type="text"
+            class="amoforms__text-input amoforms_field_element {{#field.required}}js-is-required{{/field.required}} {{#field.options.limit}}js-is-limited{{/field.options.limit}}"
+            placeholder="{{#name_position_inside}}{{field.name}}{{/name_position_inside}}{{^name_position_inside}}{{field.placeholder}}{{/name_position_inside}}"
+            name="fields[{{field_id}}]" value="{{field.default_value}}"
+            {{#field.options.noautofill}}
+            autocomplete="off"
+            readonly
+            onfocus="this.removeAttribute('readonly')"
+            {{/field.options.noautofill}}
+            {{#field.options.limit}}
+            maxlength="{{.}}"
+            {{/field.options.limit}}
+    >
+	<b></b>
+</div>

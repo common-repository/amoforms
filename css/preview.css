@@ -1,0 +1,29 @@
+/* Right side */
+.amoforms.amoforms-preview .amoforms__fields__rightside__item.expanded .amoforms__fields__rightside__item__content {
+  min-height: 115px;
+  height: auto;
+}
+
+/* Code Area */
+.amoforms-preview .amoforms__custom_code_area_wrapper .amoforms__custom_code_area {
+  border: 1px solid rgb(212, 213, 216);
+  padding: 10px;
+  width: 100%;
+  min-height: 100px;
+  max-width: 100%;
+  resize: vertical;
+  overflow-y: hidden;
+}
+.amoforms-preview .amoforms__custom_code_area_wrapper .amoforms__custom_code_area:focus {
+  border: 1px solid rgb(212, 213, 216);
+}
+
+/* Save button */
+.amoforms .amoforms__custom_code__save_buttons__wrapper {
+  margin-top: 10px;
+}
+
+/* Support info */
+.amoforms .amoforms__support_info_wrapper {
+  color: #92989b;
+}

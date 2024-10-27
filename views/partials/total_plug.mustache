@@ -1,0 +1,4 @@
+<div class="amoforms amoforms__form_calculations">
+    {{#field.options.curr_symbol}}<label class="total-left" {{#field.options.curr_position}}style="display: none;" {{/field.options.curr_position}}>{{.}}</label>{{/field.options.curr_symbol}}<span class="amoforms calculations_total">0</span>{{#field.options.curr_symbol}}<label class="total-right" {{^field.options.curr_position}}style="display: none;" {{/field.options.curr_position}}>{{.}}</label>{{/field.options.curr_symbol}}
+    <input type="hidden" class="amoforms calculations_total" name="fields[{{field_id}}]" value="0">
+</div>

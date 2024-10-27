@@ -1,0 +1,83 @@
+<div class="amoforms__fields__edit__row clearfix">
+        <div class="amoforms__fields__edit__row__left amoforms__fields__edit__row__left__radios">
+            <div class="amoforms__fields__edit__descr">Use mask for field?</div>
+            <div class="js-mask">
+                <label class="amoforms__radio__label">
+				<span class="amoforms__radio">
+					<input
+                            type="radio"
+                            name="field{{field_id}}[options][use_mask]"
+                            title="No"
+                            value="0"
+                            {{^is_system_mask}}{{^is_custom_mask}}checked="checked"{{/is_custom_mask}}{{/is_system_mask}}
+                    >
+					<b></b>
+				</span>
+                    <b>No</b>
+                </label>
+                <label class="amoforms__radio__label">
+				<span class="amoforms__radio">
+					<input
+                            type="radio"
+                            name="field{{field_id}}[options][use_mask]"
+                            title="Default"
+                            value="1"
+                            {{#is_system_mask}}checked="checked"{{/is_system_mask}}
+                    >
+					<b></b>
+				</span>
+                    <b>Default</b>
+                </label>
+                <label class="amoforms__radio__label">
+				<span class="amoforms__radio">
+					<input
+                            type="radio"
+                            name="field{{field_id}}[options][use_mask]"
+                            title="Use custom"
+                            value="2"
+                            {{#is_custom_mask}}checked="checked"{{/is_custom_mask}}
+                    >
+					<b></b>
+				</span>
+                    <b>Custom</b>
+                </label>
+            </div>
+        </div>
+        <div class="amoforms__fields__edit__row__right amoforms__fields__edit__row__right__radios">
+
+
+            <div class="amoforms__select amoforms__mask_select" {{^is_system_mask}}style="display:none;"{{/is_system_mask}}>
+                <div class="amoforms__fields__edit__descr">Choose mask</div>
+                <select class="amoforms__select__input" title="Default options" name="field[options][mask-system]">
+                        {{#system_masks}}
+                            <option value="{{name}}" data-masktext="{{mask}}" {{#active}}selected{{/active}}>{{text}}</option>
+                        {{/system_masks}}
+                        {{^system_masks}}
+                                <option disabled selected value>select a mask</option>
+                                <option value="phone" data-masktext="(000) 000-0000">Phone (000) 000-0000</option>
+                                <option value="date" data-masktext="00/00/0000">Date 00/00/0000</option>
+                                <option value="euro" data-masktext="€0,00">Euro €0,00</option>
+                                <option value="dollar" data-masktext="$0,00">Dollar $0,00</option>
+                        {{/system_masks}}
+                </select>
+            </div>
+
+            <div class="amoforms__input amoforms__mask_system" {{^is_custom_mask}}style="display:none;"{{/is_custom_mask}}>
+                <div class="amoforms__fields__edit__descr">Set custom mask</div>
+                <span class="amoforms__settings_hint tooltip-settings"
+                      title="
+                          To set up your own mask you can use:<br>
+                          0 — Arabic numerals<br>
+                          S — Uppercase and lowercase letters
+                          ">
+                </span>
+                <input
+                        type="text"
+                        class="amoforms__text-input"
+                        name="field[options][mask-custom]"
+                        placeholder="enter your own mask"
+                        value="{{^field.options.mask-custom}}{{field.options.default_mask}}{{/field.options.mask-custom}}{{#field.options.mask-custom}}{{.}}{{/field.options.mask-custom}}"
+                >
+            </div>
+        </div>
+</div>

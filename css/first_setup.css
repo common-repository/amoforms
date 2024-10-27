@@ -1,0 +1,483 @@
+.amoforms .amoforms-first_setup_main_wrapper {
+  width: 100%;
+  height: 100%;
+  margin-top: 40px;
+  /*max-width: 975px;*/
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.amoforms-first_setup_main_wrapper h1 {
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 1.3em;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+
+.amoforms .amoforms__first_setup__tutorial__wrapper {
+  max-width: 740px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.amoforms .amoforms__first_setup__account_settings__header_wrapper{
+  margin-bottom: 30px;
+}
+
+.amoforms .amoforms__first_setup__tutorial__big_header, .amoforms .amoforms__first_setup__account_settings__big_header {
+  text-align: center;
+  box-sizing: border-box;
+  font-weight: bold;
+  font-size: 30px;
+  margin-bottom: 5px;
+}
+.amoforms .amoforms__first_setup__tutorial2__big_header {
+  text-align: center;
+  box-sizing: border-box;
+  font-weight: bold;
+  font-size: 36px;
+  margin-bottom: 15px;
+  color: #23282d;
+}
+
+.amoforms .amoforms__first_setup__tutorial__header, .amoforms .amoforms__first_setup__account_settings__header {
+  font-size: 22px;
+  line-height: 1.3em;
+  text-align: center;
+  box-sizing: border-box;
+}
+.amoforms .amoforms__first_setup__tutorial2__header {
+  font-size: 23px;
+  line-height: 1.5em;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.amoforms .amoforms__first_setup__tutorial__header strong, .amoforms .amoforms__first_setup__account_settings__header strong,
+.amoforms .amoforms__first_setup__tutorial2__header strong {
+  font-weight: 600;
+  white-space: pre;
+}
+
+.amoforms .amoforms__first_setup__tutorial__header span, .amoforms .amoforms__first_setup__account_settings__header span,
+.amoforms .amoforms__first_setup__tutorial2__header span  {
+  white-space: pre;
+}
+
+.amoforms .amoforms__first_setup__tutorial2__get_started_btn_wrapper,
+.amoforms .amoforms__first_setup__tutorial__get_started_btn_wrapper {
+  text-align: center;
+}
+
+.amoforms .amoforms__first_setup__tutorial__get_started_btn {
+  padding: 12px 36px;
+  text-align: center;
+  display: inline-block;
+  margin: 30px auto 40px;
+  background: #0D9DDB;
+  border: 0;
+  -webkit-box-shadow: 3px 3px #07587b;
+  box-shadow: 3px 3px #07587b;
+  border-radius: 0;
+  font-weight: 700;
+  font-size: 18px;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+.amoforms .amoforms__first_setup__tutorial2__get_started_btn_wrapper > .amoforms__first_setup__tutorial__get_started_btn {
+  width: 220px;
+  height: 50px;
+  padding: 16px;
+  text-align: center;
+  display: inline-block;
+  margin: 30px auto 40px;
+  background: #119ed6;
+  border-radius: 3px;
+  border: 1px solid #0f82b0;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 18px;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.30);
+}
+
+.amoforms .amoforms__first_setup__tutorial__features_wrapper {
+  background: #DDD;
+  padding: 25px 45px 20px;
+}
+.amoforms .amoforms__first_setup__tutorial2__features_wrapper {
+  border-top: 1px solid #e1e1e1;
+  margin: 0 50px;
+  padding: 40px;
+}
+
+.amoforms .amoforms__first_setup__tutorial__features_wrapper h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.amoforms .amoforms__first_setup__tutorial2__features_wrapper h1{
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+
+.amoforms .amoforms__first_setup__tutorial__features_column {
+  display: table-cell;
+  width: 40%;
+  padding-left: 20px;
+}
+
+.amoforms .amoforms__feature {
+  margin-bottom: 20px;
+}
+
+.amoforms .amoforms__feature2 {
+  vertical-align: top;
+  width: 16%;
+  padding: 0 14px;
+  display: inline-block;
+  text-align: center;
+  font-size: 15px;
+}
+@media (max-width: 920px) {
+  .amoforms .amoforms__feature2 {
+    width: 32%;
+  }
+}
+@media (max-width: 768px) {
+  .amoforms .amoforms__first_setup__tutorial2__header span {
+    white-space: normal;
+  }
+}
+@media (max-width: 540px) {
+  .amoforms .amoforms__feature2 {
+    width: 49%;
+  }
+}
+@media (max-width: 410px) {
+  .amoforms .amoforms__feature2 {
+    width: 100%;
+  }
+}
+.amoforms .amoforms__feature:before {
+  content: " ";
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.amoforms .amoforms__feature2:before {
+  content: " ";
+  background: url(../images/settings/features/sprite2.png) no-repeat;
+  display: block;
+  height: 80px;
+  width: 80px;
+  vertical-align: middle;
+  margin: 10px auto;
+}
+
+.amoforms .amoforms__feature2.amoforms__feature2_amocrm:before {
+  background-position: -428px;
+}
+.amoforms .amoforms__feature2.amoforms__feature2_fields:before {
+  background-position: -14px;
+}
+.amoforms .amoforms__feature2.amoforms__feature2_captcha:before {
+  background-position: -180px;
+}
+.amoforms .amoforms__feature2.amoforms__feature2_email:before {
+  background-position: -98px;
+}
+.amoforms .amoforms__feature2.amoforms__feature2_file:before {
+  background-position: -260px;
+}
+.amoforms .amoforms__feature2.amoforms__feature2_themes:before {
+  background-position: -344px;
+}
+
+.amoforms .amoforms__feature.amoforms__feature_amocrm:before {
+  background: url(../images/settings/features/amocrm.png) no-repeat;
+  background-size: 30px auto;
+}
+.amoforms .amoforms__feature.amoforms__feature_fields:before {
+  background: url(../images/fields.png) no-repeat;
+  background-size: 30px auto;
+}
+.amoforms .amoforms__feature.amoforms__feature_captcha:before {
+  background: url(../images/settings/features/captcha.png) no-repeat;
+  background-size: 30px auto;
+}
+.amoforms .amoforms__feature.amoforms__feature_email:before {
+  background: url(../images/settings/features/mail.png) no-repeat;
+  background-size: 30px auto;
+}
+.amoforms .amoforms__feature.amoforms__feature_file:before {
+  background: url(../images/settings/features/file.png) no-repeat;
+  background-size: 30px auto;
+}
+.amoforms .amoforms__feature.amoforms__feature_themes:before {
+  background: url(../images/settings/features/themes.png) no-repeat;
+  background-size: 30px auto;
+}
+
+/* -----------------------------------------------------------------------------
+	Feedbacks
+----------------------------------------------------------------------------- */
+
+.amoforms .amoforms__first_setup__tutorial__testimonials_wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 950px;
+}
+
+.amoforms .amoforms__first_setup__tutorial__testimonials_wrapper .feedbacks_head h1 {
+  text-align: center;
+}
+
+.amoforms .feedbacks_block {
+  padding: 30px 0 0;
+}
+
+.amoforms .feedbacks_head {
+  /*font-size: 37px;*/
+  text-align: center;
+  margin: 29px 0 37px;
+  line-height: 1.35em;
+  -webkit-font-smoothing: antialiased;
+}
+
+.amoforms .feedbacks_head h1 {
+  padding-right: 16px;
+  /*font-size: 32px;*/
+  letter-spacing: -0.16px;
+  margin-bottom: 1px;
+}
+
+.amoforms .feedbacks_wrapper {
+  position: relative;
+}
+
+.amoforms .feedbacks__img_list_wrapper {
+  position: absolute;
+  top: 0;
+  left: 61px;
+}
+
+/* slide container */
+.amoforms .feedbacks__img_list_wrapper .slides {
+  float: left;
+  margin: 0;
+  padding: 0;
+  border: none;
+  list-style: none;
+  position: relative;
+  overflow: visible;
+}
+
+/* slide item */
+.amoforms .feedbacks__img_list_wrapper .slides .slideItem {
+  position: absolute;
+  cursor: pointer;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+.amoforms .feedbacks__img_list_wrapper .slides .slideItem img {
+  margin: 0;
+  padding: 0;
+  border: none;
+  width: 100%;
+  height: 100%;
+}
+
+.amoforms .feedbacks_wrapper .bx-wrapper .bx-viewport {
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border: none;
+  left: 0;
+  background: none;
+}
+
+.amoforms .feedbacks__item {
+  position: static !important;
+  height: 189px;
+}
+
+.amoforms .feedbacks__item_inner {
+  padding: 0 0 22px;
+}
+
+.amoforms .feedbacks__item__img {
+  display: block;
+  margin-left: 61px;
+}
+
+.amoforms .feedbacks__item__quote_wrapper {
+  margin-left: 256px;
+  max-height: 165px;
+}
+
+.amoforms .feedbacks__item__quote {
+  margin: 0 60px 23px 0;
+  padding: 22px 21px 0 21px;
+  font-size: 23px;
+  line-height: 1.4783;
+  position: relative;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.amoforms .feedbacks__item__quote:before {
+  content: '“';
+  position: absolute;
+  top: -3px;
+  right: 100%;
+  margin-right: -18px;
+  font-size: 72px;
+  color: #94979a
+}
+
+/*.feedbacks__item__quote:after {*/
+/*content: '”';*/
+/*position: absolute;*/
+/*top: 100%;*/
+/*left: 100%;*/
+/*margin-left: -53px;*/
+/*margin-top: -106px;*/
+/*font-size: 72px;*/
+/*color: #94979a*/
+/*}*/
+
+.amoforms .feedbacks__item__quote .right_quote {
+  position: absolute;
+  margin-left: 5px;
+  margin-top: -25px;
+  font-size: 72px;
+  color: #94979a;
+}
+
+.amoforms .feedbacks__item__quote.sec_quote:after {
+  margin-left: -26px !important;
+}
+
+.amoforms .feedbacks__item__quote.third_quote:after {
+  margin-left: -36px !important;
+  margin-top: -140px !important;
+}
+
+.amoforms .feedbacks__item__quote.fourth_quote:after {
+  margin-left: -54px !important;
+  margin-top: -140px !important;
+}
+
+.amoforms .feedbacks__item__quote.fifth_quote:after {
+  margin-left: -58px !important;
+}
+
+.amoforms .feedbacks__item__quote.two_line:after {
+  margin-left: -75px !important;
+}
+
+.amoforms .feedbacks__item__quote.three_line:after {
+  margin-top: -140px !important;
+}
+
+.amoforms .feedbacks__item__quote.three_line.first:after {
+  margin-left: -50px !important;
+}
+
+.amoforms .feedbacks__item__quote.three_line.fourth:after {
+  margin-left: -35px;
+}
+
+.amoforms .feedbacks__item__quote.three_line.fifth:after {
+  margin-left: -49px;
+}
+
+.amoforms .feedbacks__item__quote_author {
+  font-size: 16px;
+  color: #a2a2a2;
+  margin: 0 0 0 24px;
+  font-style: italic;
+}
+
+.amoforms .feedbacks__arrow a {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.amoforms .feedbacks__arrow {
+  position: absolute;
+  cursor: pointer;
+  top: 47px;
+}
+
+.amoforms .icon-arrow-left.feedbacks__arrow {
+  left: -59px;
+}
+
+.amoforms .icon-arrow-left.feedbacks__arrow:hover {
+  background-position: 0 -160px;
+}
+
+.amoforms .icon-arrow-right.feedbacks__arrow {
+  right: -59px;
+}
+
+.amoforms .icon-arrow-right.feedbacks__arrow:hover {
+  background-position: 0 -205px;
+}
+
+/* -----------------------------------------------------------------------------
+	/ Feedbacks
+----------------------------------------------------------------------------- */
+
+.amoforms .icon {
+  background: url(../images/settings/spritesheet.png) no-repeat;
+  display: block;
+}
+
+.amoforms .icon-arrow-left {
+  width: 45px;
+  height: 45px;
+  background-position: 0 -70px;
+}
+
+.amoforms .icon-arrow-right {
+  width: 45px;
+  height: 45px;
+  background-position: 0 -115px;
+}
+
+
+/*
+ Email settings form
+*/
+.amoforms.amoforms-email {
+  margin-left: auto;
+  margin-right: auto;
+}
+.amoforms .amoforms__email_settings_form.amoforms_saved_email_settings .amoforms__section_top {
+  display: none;
+}
+.amoforms .amoforms__email_settings_form.amoforms_saved_email_settings .amoforms__stats_reporting {
+  display: none;
+}
+.amoforms .amoforms__email_settings_form.amoforms_saved_email_settings .save_button.submit_button {
+  display: none;
+}
+.amoforms .amo_account_settings_wrapper[data-state="connected"] .amoforms_credentials__links {
+  display: none !important;
+}

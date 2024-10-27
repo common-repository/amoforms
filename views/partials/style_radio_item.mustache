@@ -1,0 +1,173 @@
+<div class="amoforms__styles_editor__colors_wrapper">
+    <div class="amoforms__styles_editor_colorsettings">
+        <div class="amoforms__fields__edit__descr">Background</div>
+        <input
+                type="text"
+                class="amoforms__text-input amoforms__fields__edit__input amoforms__colorsetting"
+                name="style[elements][radio_item][background-color]"
+                title="Background color"
+                value="{{background-color}}"
+        ></div>
+    <div class="amoforms__styles_editor_colorsettings">
+        <div class="amoforms__fields__edit__descr">Border</div>
+        <input
+                type="text"
+                class="amoforms__text-input amoforms__fields__edit__input amoforms__colorsetting"
+                name="style[elements][radio_item][border-color]"
+                title="Border Color"
+                value="{{border-color}}"
+        ></div>
+    <div class="amoforms__styles_editor_colorsettings">
+        <div class="amoforms__fields__edit__descr">Text</div>
+        <input
+                type="text"
+                class="amoforms__text-input amoforms__fields__edit__input amoforms__colorsetting"
+                name="style[elements][radio_item][color]"
+                title="Color"
+                value="{{color}}"
+        ></div>
+</div>
+<!--Visual Margin Editor-->
+<div id="radio_item" class="amoforms__styles_editor__visual_wrapper">
+    <div class="amoforms__fields__edit__descr">Box Model  <div class="amoforms__visual_hint tooltip-visual" title="You can use all CSS units of measurement like: <br> <ul><li>• em</li><li>• ex</li><li>• px</li><li>• %</li><li>• auto</li></ul> Pay attention that you need to set unit of measurement after number correctly."> </div>
+    </div>
+    <div class="js-style-visual amoforms__styles_editor__margin">
+        <label class="amoforms__styles_editor__label">Margin</label>
+        <input name="style[elements][radio_item][margin-top]" type="text" class="amoforms__styles_editor_input margin-top">
+        <input name="style[elements][radio_item][margin-right]" type="text" class="amoforms__styles_editor_input margin-right">
+        <input name="style[elements][radio_item][margin-bottom]" type="text" class="amoforms__styles_editor_input margin-bottom">
+        <input name="style[elements][radio_item][margin-left]" type="text" class="amoforms__styles_editor_input margin-left">
+    </div>
+    <div class="js-style-visual amoforms__styles_editor__border">
+        <label class="amoforms__styles_editor__label">Border</label>
+        <input name="style[elements][radio_item][border-top]" type="text" class="amoforms__styles_editor_input border-top">
+        <input name="style[elements][radio_item][border-right]" type="text" class="amoforms__styles_editor_input border-right">
+        <input name="style[elements][radio_item][border-bottom]" type="text" class="amoforms__styles_editor_input border-bottom">
+        <input name="style[elements][radio_item][border-left]" type="text" class="amoforms__styles_editor_input border-left">
+    </div>
+    <div class="js-style-visual amoforms__styles_editor__padding">
+        <label class="amoforms__styles_editor__label">Padding</label>
+        <input name="style[elements][radio_item][padding-top]" type="text" class="amoforms__styles_editor_input padding-top">
+        <input name="style[elements][radio_item][padding-right]" type="text" class="amoforms__styles_editor_input padding-right">
+        <input name="style[elements][radio_item][padding-bottom]" type="text" class="amoforms__styles_editor_input padding-bottom">
+        <input name="style[elements][radio_item][padding-left]" type="text" class="amoforms__styles_editor_input padding-left">
+    </div>
+    <div class="js-style-visual amoforms__styles_editor__field">
+        <label class="amoforms__styles_editor__label">Content</label>
+    </div>
+    <input
+            type="hidden"
+            class="amoforms__text-input amoforms__fields__edit__input amoforms__padding_value"
+            name="style[elements][radio_item][padding]"
+            title="Padding"
+            value="{{padding}}"
+    >
+    <input
+            type="hidden"
+            class="amoforms__text-input amoforms__fields__edit__input amoforms__margin_value"
+            name="style[elements][radio_item][margin]"
+            title="Margin"
+            value="{{margin}}"
+    >
+    <input
+            type="hidden"
+            class="amoforms__text-input amoforms__fields__edit__input amoforms__border_value"
+            name="style[elements][radio_item][border-width]"
+            title="Border width"
+            value="{{border-width}}"
+    >
+</div>
+<!--Visual Margin Editor-->
+
+<div class="clearfix"></div>
+{{#border-radius}}
+    <div class="style_wrapper">
+        <div class="amoforms__fields__edit__descr amoforms__fields__edit__descr-placeholder">Border Radius</div>
+        <input
+                type="text"
+                class="amoforms__text-input amoforms__fields__edit__input"
+                name="style[elements][radio_item][border-radius]"
+                title="Border radius"
+                value="{{.}}"
+        >
+    </div>
+{{/border-radius}}
+
+{{#border-style}}
+    <div class="style_wrapper">
+        <div class="amoforms__fields__edit__descr amoforms__fields__edit__descr-placeholder">Border Style</div>
+        <select class="amoforms__select__input" data-border="{{.}}" title="Border Style" name="style[elements][radio_item][border-style]">
+            <option value="solid">Solid</option>
+            <option value="dashed">Dashed</option>
+            <option value="dotted">Dotted</option>
+            <option value="double">Double</option>
+            <option value="groove">Groove</option>
+            <option value="ridge">Ridge</option>
+            <option value="inset">Inset</option>
+            <option value="outset">Outset</option>
+        </select>
+    </div>
+{{/border-style}}
+{{#font-family}}
+    <div class="style_wrapper">
+        <div class="amoforms__fields__edit__descr amoforms__fields__edit__descr-placeholder">Font Family</div>
+        <select class="amoforms__select__input" data-family="{{.}}" title="Font Family" name="style[elements][radio_item][font-family]">
+            <option style="font-family: 'PT Sans', sans-serif" value="PT Sans">PT Sans</option>
+            <option style="font-family: 'Arial', sans-serif" value="Arial">Arial</option>
+            <option style="font-family: 'Courier New', monospace" value="Courier New">Courier New</option>
+            <option style="font-family: 'Georgia', serif" value="Georgia">Georgia</option>
+            <option style="font-family: 'Lucida Console', monospace" value="Lucida Console">Lucida Console</option>
+            <option style="font-family: 'Tahoma', sans-serif" value="Tahoma">Tahoma</option>
+            <option style="font-family: 'Times New Roman', serif" value="Times New Roman">Times New Roman</option>
+            <option style="font-family: 'Verdana', sans-serif" value="Verdana">Verdana</option>
+        </select>
+    </div>
+{{/font-family}}
+{{#box-shadow}}
+    <div class="style_wrapper">
+        <div class="amoforms__fields__edit__descr amoforms__fields__edit__descr-placeholder">Box Shadow</div>
+        <input
+                type="text"
+                class="amoforms__text-input amoforms__fields__edit__input"
+                name="style[elements][radio_item][box-shadow]"
+                title="Box Shadow"
+                value="{{.}}"
+        >
+    </div>
+{{/box-shadow}}
+{{#font-size}}
+    <div class="style_wrapper">
+        <div class="amoforms__fields__edit__descr amoforms__fields__edit__descr-placeholder">Font Size</div>
+        <input
+                type="text"
+                class="amoforms__text-input amoforms__fields__edit__input"
+                name="style[elements][radio_item][font-size]"
+                title="Font Size"
+                value="{{.}}"
+        >
+    </div>
+{{/font-size}}
+{{#height}}
+    <div class="style_wrapper">
+        <div class="amoforms__fields__edit__descr amoforms__fields__edit__descr-placeholder">Height</div>
+        <input
+                type="text"
+                class="amoforms__text-input amoforms__fields__edit__input"
+                name="style[elements][radio_item][height]"
+                title="Height"
+                value="{{.}}"
+        >
+    </div>
+{{/height}}
+{{#width}}
+    <div class="style_wrapper">
+        <div class="amoforms__fields__edit__descr amoforms__fields__edit__descr-placeholder">Width</div>
+        <input
+                type="text"
+                class="amoforms__text-input amoforms__fields__edit__input"
+                name="style[elements][radio_item][width]"
+                title="Width"
+                value="{{.}}"
+        >
+    </div>
+{{/width}}

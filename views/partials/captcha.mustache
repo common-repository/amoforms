@@ -1,0 +1,6 @@
+{{#edit_mode}}
+    <div class="amoforms__captcha"></div>
+{{/edit_mode}}
+{{^edit_mode}}
+    <div id="{{unique_captcha_id}}" class="g-recaptcha" {{^grid.full}}style="transform:scale(0.72);transform-origin:0 0"{{/grid.full}}></div>
+{{/edit_mode}}

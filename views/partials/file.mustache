@@ -1,0 +1,24 @@
+<div class="amoforms__file-input__wrapper amoforms_field_element amoforms_dropzone {{#field.required}}amoforms_dropzone_required{{/field.required}}">
+	<div class="amoforms__file-input__title dz-message" data-dz-message>{{field.label}}</div>
+	<input type="file" name="fields[{{field_id}}]" style="display: none;">
+    <div id="amoforms__file-input__preview" style="display: none;">
+		<div class="amoforms__file-input__preview">
+			<div class="amoforms__file-input__preview__img">
+				<img src="" alt="" class="dz-image-preview">
+				<div class="amoforms__file-input__preview__icon"></div>
+			</div>
+			<p class="amoforms__file-input__preview__details">
+				<span class="amoforms__file-input__preview__name" data-dz-name></span>
+				<a href="" class="amoforms__file-input__preview__delete" data-dz-remove></a>
+			</p>
+			<div class="amoforms__file-input__preview__progress-bar">
+				<div class="amoforms__file-input__preview__progress-bar__filler" data-dz-uploadprogress></div>
+			</div>
+			<p class="amoforms__file-input__preview__error" data-dz-errormessage></p>
+		</div>
+    </div>
+    <p class="amoforms__file_limits">Max file size: <span class="amoforms__file_size">{{field.size}}</span> MB. <span {{^field.extensions}}style="display: none"{{/field.extensions}}>Acceptable file types:
+        <span class="amoforms__file_types">{{field.extensions}}</span>
+    </span>
+</div>
+

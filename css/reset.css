@@ -1,0 +1,73 @@
+.amoforms div, .amoforms span, .amoforms applet, .amoforms object, .amoforms iframe,
+.amoforms h1, .amoforms h2, .amoforms h3, .amoforms h4, .amoforms h5, .amoforms h6, .amoforms p,
+.amoforms a, .amoforms img, .amoforms small, .amoforms strong, .amoforms sub, .amoforms b,
+.amoforms sup, .amoforms u, .amoforms i,
+.amoforms dl, .amoforms dt, .amoforms dd, .amoforms ol, .amoforms ul, .amoforms li,
+.amoforms fieldset, .amoforms form, .amoforms label, .amoforms legend,
+.amoforms table, .amoforms tbody, .amoforms tr, .amoforms th, .amoforms td,
+.amoforms input, .amoforms textarea, .amoforms button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-weight: normal;
+  font: inherit;
+  vertical-align: baseline;
+  text-rendering: geometricPrecision;
+  outline: none;
+  
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.amoforms select {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+.amoforms ol, .amoforms ul {
+  list-style: none;
+}
+.amoforms table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.amoforms .clear {
+  clear: both;
+}
+.amoforms input, .amoforms textarea, .amoforms select, .amoforms button {
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  box-shadow: none;
+  background-color: initial;
+  color: initial;
+}
+.amoforms select::-ms-expand {
+  display: none;
+}
+.amoforms input:focus, .amoforms textarea:focus, .amoforms select:focus {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-color: initial;
+}
+.amoforms input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+  margin-top:-2px;
+  margin-bottom: -2px;
+}
+
+.amoforms .clearfix:after{
+  content: '';
+  display: block;
+  clear: both;
+  height: 0;
+  visibility: hidden;
+}

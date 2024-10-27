@@ -1,0 +1,103 @@
+{{^grid.right }}
+    <div class="amoforms__fields__container">
+{{/grid.right}}
+    <div id="style-{{field_style.id}}" class="amoforms__fields__row {{#grid.full}}full{{/grid.full}}{{^grid.full}}half{{/grid.full}} {{class_name}} amoforms-field-name-position-{{#name_position_inside}}inside{{/name_position_inside}}{{#name_position_above}}above{{/name_position_above}}{{#name_position_before}}before{{/name_position_before}}" data-type="{{field.type}}">
+        <div class="amoforms__fields__row-view amoforms_field_wrapper">
+            {{#name_position_before}}
+                {{^is_pos_after}}
+                    <div class="amoforms__fields__row__inner__descr" {{^field.description}}style="display: none"{{/field.description}}>{{field.description}}</div>
+                {{/is_pos_after}}
+            {{/name_position_before}}
+
+            {{#is_radio}}
+                {{#name_position_inside}}
+                    {{^is_pos_after}}
+                        <div class="amoforms__fields__row__inner__descr" {{^field.description}}style="display: none"{{/field.description}}>{{field.description}}333</div>
+                    {{/is_pos_after}}
+                {{/name_position_inside}}
+            {{/is_radio}}
+
+            <div class="amoforms__fields__row__inner">
+                {{#is_line}}
+                <div class="amoforms__fields__row__inner__control amoforms__fields__row__inner__control-line">
+                    <div class="amoforms__line amoforms_field_element"></div>
+                </div>
+                {{/is_line}}
+
+                {{^is_line}}
+                {{#is_checkbox}}
+                {{^name_position_before}}{{^is_pos_after}}<div class="amoforms__fields__row__inner__descr" {{^field.description}}style="display: none"{{/field.description}}>{{field.description}}</div>{{/is_pos_after}}{{/name_position_before}}
+                <div class="amoforms__fields__row__inner__control">
+                    {{#field.hint}}
+                        <span class="amoforms__forms_hint tooltip-form" title="{{field.hint}}"></span>
+                    {{/field.hint}}
+                    <label class="amoforms__fields__row__inner__name amoforms__fields__row__inner__name-checkbox amoforms_field_label" {{^field.name}}style="display: none"{{/field.name}}>
+                        <span>{{field.name}}</span>{{#field.required}}<b>*</b>{{/field.required}}
+                    </label>
+                    {{> checkbox }}
+                </div>
+                {{/is_checkbox}}
+
+                {{^is_checkbox}}
+                {{^is_heading}}{{^is_antispam}}<div class="amoforms__fields__row__inner__name amoforms_field_label" {{#field.name}}{{#name_position_inside}}{{^is_radio}}{{^is_checkbox}}style="display:none"{{/is_checkbox}}{{/is_radio}}{{/name_position_inside}}{{/field.name}}{{^field.name}}style="display: none"{{/field.name}}><span>{{field.name}}</span>{{#field.required}}<b>*</b>{{/field.required}}</div>{{/is_antispam}}{{/is_heading}}
+                {{#is_antispam}}<div class="amoforms__fields__row__inner__name amoforms_field_label"><span>{{field.spam.question}}</span></div>{{/is_antispam}}
+                {{#is_radio}}
+                    {{^name_position_before}}{{^name_position_inside}}
+                        {{^is_pos_after}}
+                            <div class="amoforms__fields__row__inner__descr" {{^field.description}}style="display: none"{{/field.description}}>{{field.description}}333</div>
+                        {{/is_pos_after}}
+                    {{/name_position_inside}}{{/name_position_before}}
+                {{/is_radio}}
+
+                {{^is_radio}}
+                    {{^is_instructions}}{{^name_position_before}}{{^is_pos_after}}<div class="amoforms__fields__row__inner__descr" {{^field.description}}style="display: none"{{/field.description}}>{{field.description}}</div>{{/is_pos_after}}{{/name_position_before}}{{/is_instructions}}
+                {{/is_radio}}
+
+                <div class="amoforms__fields__row__inner__control">
+                    {{#field.hint}}
+                        <span class="amoforms__forms_hint tooltip-form" title="{{field.hint}}"></span>
+                    {{/field.hint}}
+                    {{#is_name}}{{> text }}{{/is_name}}
+                    {{#is_email}}{{> text }}{{/is_email}}
+                    {{#is_phone}}{{> text_phone }}{{/is_phone}}
+                    {{#is_company}}{{> text }}{{/is_company}}
+                    {{#is_text}}{{> text }}{{/is_text}}
+                    {{#is_file}}{{> file }}{{/is_file}}
+                    {{#is_captcha}}{{> captcha }}{{/is_captcha}}
+                    {{#is_url}}{{> text }}{{/is_url}}
+                    {{#is_number}}{{> number }}{{/is_number}}
+                    {{#is_textarea}}{{> textarea }}{{/is_textarea}}
+                    {{#is_address}}{{> textarea }}{{/is_address}}
+                    {{#is_select}}{{> select }}{{/is_select}}
+                    {{#is_radio}}{{> radio }}{{/is_radio}}
+                    {{#is_multiselect}}{{> multiselect }}{{/is_multiselect}}
+                    {{#is_date}}{{> date }}{{/is_date}}
+                    {{#is_heading}}{{> heading }}{{/is_heading}}
+                    {{#is_instructions}}{{> instructions }}{{/is_instructions}}
+                    {{#is_city}}{{> text }}{{/is_city}}
+                    {{#is_zippost}}{{> text }}{{/is_zippost}}
+                    {{#is_country}}{{> select }}{{/is_country}}
+                    {{#is_antispam}}{{> antispam }}{{/is_antispam}}
+                    {{#is_rating}}{{> rating }}{{/is_rating}}
+                    {{#is_tax}}{{> tax_plug }}{{/is_tax}}
+                    {{#is_total}}{{> total_plug }}{{/is_total}}
+                </div>
+                {{/is_checkbox}}
+                {{/is_line}}
+            </div>
+            {{^is_instructions}}
+                {{#is_pos_after}}
+                    <div class="amoforms__fields__row__inner__descr"
+                         {{^field.description}}style="display: none"{{/field.description}}>{{field.description}}
+                    </div>
+                    {{#field.options.limit}}
+                        <div class="amoforms__fields__row__inner__limit" style="display: none"></div>
+                    {{/field.options.limit}}
+                {{/is_pos_after}}
+            {{/is_instructions}}
+        </div>
+    </div>
+{{^ grid.left }}
+    <div class="clearfix"></div>
+</div>
+{{/grid.left}}

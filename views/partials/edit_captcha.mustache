@@ -1,0 +1,31 @@
+<div class="amoforms__fields__edit__row">
+    <div class="amoforms__fields__edit__descr">Choose time used to generate token. In most cases server time should be used. But if you receive an error "Stoken expired", please choose NTP Server Time</div>
+        <div class="amoforms__fields__edit__row__left__radios">
+            <label class="amoforms__radio__label">
+				<span class="amoforms__radio">
+					<input
+					    type="radio"
+					    name="field{{field_id}}[options][captcha_ntp]"
+					    title="Server Time"
+					    value="{{consts.captcha_ntp_disabled}}"
+					    {{^captcha_ntp}}checked="checked"{{/captcha_ntp}}
+					    >
+					<b></b>
+				</span>
+                <b>Server Time</b>
+            </label>
+            <label class="amoforms__radio__label">
+				<span class="amoforms__radio">
+					<input
+					    type="radio"
+					    name="field{{field_id}}[options][captcha_ntp]"
+					    title="NTP Server Time"
+					    value="{{consts.captcha_ntp_enabled}}"
+					    {{#captcha_ntp}}checked="checked"{{/captcha_ntp}}
+					    >
+					<b></b>
+				</span>
+                <b>NTP Server Time</b>
+            </label>
+        </div>
+</div>

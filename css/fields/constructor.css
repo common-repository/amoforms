@@ -1,0 +1,580 @@
+.amoforms .amoforms_fields_settings {
+  max-width: 1082px;
+  min-width: 800px;
+}
+
+.amoforms_form_preview_form_wrapper {
+  width: 700px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  padding: 15px;
+}
+
+.amoforms.amoforms-preview .amoforms__fields__main {
+  background-color: #f1f1f1;
+  border: none;
+  padding-top: 0;
+}
+
+.amoforms .amoforms__fields__main {
+  color: #2a3640;
+  background-color: #ffffff;
+  border: 1px solid #d4d5d8;
+  border-radius: 2px;
+  padding: 20px 22px 38px 22px;
+  overflow: hidden;
+}
+
+.amoforms .amoforms__fields__view,
+.amoforms .amoforms__fields__editor {
+  padding: 1px 40px 40px 40px;
+  background: #fff;
+  background-size: cover;
+  background-position: center center;
+  border: 1px solid rgba(0, 0, 0, 0.13);
+}
+
+.amoforms .amoforms__fields__view {
+  max-width: 700px;
+}
+
+.amoforms_modal .amoforms .amoforms__fields__view {
+  max-width: 720px;
+}
+
+.amoforms .amoforms__fields__container,
+.amoforms .amoforms__fields__container_locked {
+  border: 1px dashed rgba(153, 155, 160, 0);
+  border-radius: 3px;
+  margin-top: 5px;
+  padding: 15px 15px 15px 45px;
+}
+
+.amoforms .amoforms__fields__container_hover {
+  position: inherit;
+  cursor: grab;
+  cursor: -webkit-grab;
+  cursor: -moz-grab;
+  cursor: url('../../images/cursors/grab.cur'), move;
+
+  border: 1px dashed rgba(153, 155, 160, 0.34) !important;
+}
+.amoforms .amoforms__fields__container_hover.white {
+  border: 1px dashed rgba(255, 255, 255, 0.80) !important;
+}
+
+.amoforms .amoforms__fields__container__handler {
+  opacity: 0;
+  width: 17px;
+  height: 17px;
+  margin-left: -35px;
+  margin-top: 12px;
+  background-image: url(../../images/main-form-sprite.png);
+  background-position: -100px -1px;
+  background-size: 160px;
+  display: block;
+  position: absolute;
+  top: inherit;
+  left: inherit;
+}
+.amoforms .amoforms__fields__container__handler.white,
+.amoforms .amoforms__fields__container__handler.white:hover {
+  background-position: -142px -1px;
+}
+.amoforms .amoforms__fields__container__handler:hover {
+  background-position: -121px -1px;
+}
+
+.amoforms .amoforms__fields__row {
+  display: inline-block;
+  position: relative;
+}
+.amoforms .amoforms__fields__row_hover {
+  border-style: dashed !important;
+  border-color: rgba(153, 155, 160, 0.34) !important;
+}
+.amoforms .amoforms__fields__row.full {
+  width: 100%;
+}
+.amoforms .amoforms__fields__row.half {
+  width: 49%;
+}
+.amoforms .amoforms__fields__row.half:nth-of-type(2) {
+  float: right;
+}
+
+/*Changes*/
+.amoforms .amoforms__fields__row:last-child {
+  padding-bottom: 0;
+}
+/**/
+.amoforms .amoforms__fields .amoforms__fields__expander__item__content__fields__field {
+  display: none;
+}
+
+.amoforms .amoforms__fields__row__inner {
+  border: 1px solid transparent;
+
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  -o-flex-direction: column;
+  flex-direction: column;
+}
+
+.amoforms .amoforms__fields__container_hover .amoforms__fields__row__inner{
+  cursor: move;
+}
+
+.amoforms .amoforms-field-name-position-inside[data-type="radio"] .amoforms__fields__row__inner,
+.amoforms .amoforms-field-name-position-before .amoforms__fields__row__inner {
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  -ms-flex-direction: row;
+  -o-flex-direction: row;
+  flex-direction: row;
+}
+
+.amoforms .amoforms__fields__row__inner__name {
+  padding: 0 0 4px 10px;
+  -ms-word-wrap: break-word;
+  word-wrap: break-word;
+  display: block;
+}
+
+.amoforms .amoforms__fields__row.half .amoforms__fields__row__inner__name {
+  width: auto;
+}
+.amoforms__fields__row.half:nth-of-type(1) .amoforms__fields__row__inner__name {
+  width: auto;
+}
+.amoforms .amoforms__fields__container__list {
+  min-height: 20px;
+}
+
+.amoforms span.amoforms__forms_hint {
+  position: absolute;
+  right: 10px;
+  width: 20px;
+  height: 20px;
+  margin-top: 10px;
+  cursor: help;
+  background: url(../../images/riddler.png) no-repeat;
+  background-size: 20px;
+  opacity: 0.4;
+}
+
+.amoforms span.amoforms__settings_hint {
+  position: absolute;
+  right: 50px;
+  width: 20px;
+  height: 20px;
+  margin-top: 9px;
+  cursor: help;
+  background: url(../../images/riddler.png) no-repeat;
+  background-size: 21px;
+  opacity: 0.4;
+}
+.amoforms div.amoforms__visual_hint {
+  position: relative;
+  display: inline-block;
+  float: right;
+  left: -203px;
+  top: -1px;
+  width: 20px;
+  height: 20px;
+  cursor: help;
+  background: url(../../images/riddler.png) no-repeat;
+  background-size: 21px;
+  opacity: 0.4;
+}
+
+.amoforms span.amoforms__forms_hint.white,
+.amoforms span.amoforms__settings_hint.white {
+  background: url(../../images/riddler_white.png) no-repeat;
+  background-size: 20px;
+  opacity: 1;
+}
+
+.amoforms .amoforms__fields__row__inner__control {
+  position: relative;
+  -webkit-flex: auto;
+  -moz-flex: auto;
+  -ms-flex: auto;
+  -o-flex: auto;
+  flex: auto;
+}
+.amoforms .amoforms__fields__row:first-child .amoforms__fields__row__inner__control {
+  margin-top: 0;
+}
+
+.amoforms .amoforms__fields__row.in-edit .amoforms__fields__row__inner__control .amoforms__text-input {
+  border: 1px solid #9ca4ab;
+}
+
+.amoforms .amoforms__fields__row__inner__control textarea.amoforms__text-input {
+  display: inherit;
+}
+
+.amoforms .amoforms__fields__editor .amoforms__fields__row .amoforms__fields__row__inner__control:before {
+  content: "";
+
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+}
+.amoforms .amoforms__fields__editor .amoforms__fields__container_locked .amoforms__fields__row .amoforms__fields__row__inner__control:before {
+  cursor: default;
+}
+.amoforms .amoforms__fields__container.sortable-ghost,
+.amoforms .amoforms__fields__editor .amoforms__fields__row.sortable-ghost .amoforms__fields__row__inner__control:before {
+  background: #fff;
+  z-index: 3;
+  border: 1px dashed #999ba0;
+  border-radius: 3px;
+}
+
+.amoforms .amoforms__fields__row-view .amoforms__fields__row__inner__name + .amoforms__fields__row__inner__descr {
+  margin-bottom: 3px;
+  margin-top: -3px;
+}
+.amoforms .amoforms__fields__row__inner__descr {
+  position: relative;
+}
+.amoforms .amoforms__fields__row__inner__descr,
+.amoforms .amoforms__fields__row__inner__limit
+{
+  padding: 0 0 0 11px;
+  margin-top: 3px;
+  font-style: italic;
+  /*font-size: 13px;*/
+  /*color: #676e79;*/
+  -ms-word-wrap: break-word;
+  word-wrap: break-word;
+  margin-bottom: -12px;
+}
+
+.amoforms .amoforms__fields__row__inner__descr + .amoforms__fields__row__inner {
+  margin-top: 12px;
+}
+
+/* Radio control */
+.amoforms .amoforms__radio-control {
+  padding: 0;
+  min-height: 25px;
+  position: relative;
+  top: 4px;
+}
+.amoforms .amoforms__radio-control.amoforms__radio-control-block {
+  top: -7px;
+}
+
+.amoforms .amoforms__radio-control .amoforms__radio__label {
+  display: inline-block;
+  margin-right: 20px;
+  padding-top: 3px;
+}
+.amoforms .amoforms__radio-control.amoforms__radio-control-block .amoforms__radio__label {
+  display: block;
+}
+.amoforms .amoforms__radio-control + .amoforms__fields__editor__row__actions {
+  top: 10px;
+}
+/* end of Radio control */
+
+/* Checkbox control */
+.amoforms .amoforms__checkbox-control {
+  display: inline-flex;
+  vertical-align: middle;
+  margin-left: 5px;
+  height: 24px;
+}
+.amoforms .amoforms__fields__row__inner__name-checkbox + .amoforms__fields__editor__row__actions {
+  top: -3px;
+}
+.amoforms__fields__row__inner__name-checkbox{
+  float: left;
+}
+/* end of Checkbox control */
+
+/* Line control */
+.amoforms .amoforms__line + .amoforms__fields__editor__row__actions {
+  top: -10px;
+  right: -2px;
+  padding-right: 10px;
+}
+/* end of Line control */
+
+/* Name-Inside styles */
+.amoforms .amoforms-field-name-position-inside[data-type="radio"] .amoforms__fields__row__inner__name {
+  padding-top: 6px;
+}
+.amoforms .amoforms-field-name-position-inside[data-type="radio"] .amoforms__fields__row__inner__name > span,
+.amoforms .amoforms-field-name-position-inside[data-type="checkbox"] .amoforms__fields__row__inner__name > span {
+  max-width: 100px;
+  overflow: hidden;
+  display: inline-block;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.amoforms .amoforms-field-name-position-inside[data-type="radio"] .amoforms__fields__row__inner__name > b,
+.amoforms .amoforms-field-name-position-inside[data-type="checkbox"] .amoforms__fields__row__inner__name > b {
+  display: inline-block;
+  vertical-align: top;
+}
+/* end of Name-Inside styles */
+
+/* Name-Above styles */
+.amoforms .amoforms-field-name-position-above .amoforms__fields__row__inner__name .amoforms__heading .amoforms__h {
+  margin-left: -2px;
+}
+.amoforms .amoforms-field-name-position-above .amoforms__fields__row__inner__name.amoforms_field_label{
+  padding: 0 !important;
+}
+/* end of Name-Above styles */
+
+/* Name-Before styles */
+.amoforms .amoforms-field-name-position-before .amoforms__fields__row__inner__control {
+  -webkit-flex: 1;
+  -moz-flex: 1;
+  -ms-flex: 1;
+  -o-flex: 1;
+  flex: 1;
+}
+.amoforms .amoforms-field-name-position-before .amoforms__fields__row__inner__name {
+  padding: 11px 10px 0 0;
+  width: auto;
+  text-overflow: ellipsis;
+  position: relative;
+  margin-right: 10px;
+}
+.amoforms .amoforms-field-name-position-before .amoforms__fields__row__inner__name > span {
+  display: inline-block;
+  max-width: 100%;
+  overflow: visible;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.amoforms .amoforms-field-name-position-before .amoforms__fields__row__inner__name > b {
+  display: inline-block;
+  vertical-align: top;
+  color: red !important;
+}
+.amoforms .amoforms-field-name-position-before[data-type="checkbox"] .amoforms__fields__row__inner__name > span {
+  max-width: 90px;
+}
+.amoforms .amoforms-field-name-position-before[data-type="checkbox"] .amoforms__fields__row__inner__name .amoforms__checkbox-control {
+  position: absolute;
+  left: 90px;
+}
+.amoforms .amoforms__style_type {
+  margin: 10px 0 15px 10px;
+}
+.amoforms .amoforms-field-name-position-before .amoforms__heading .amoforms__h {
+  margin-left: -10px;
+}
+.amoforms .amoforms-field-name-position-before[data-type="heading"] .amoforms__fields__row__inner__descr {
+  padding-left: 0;
+}
+.amoforms .amoforms-field-name-position-before[data-type="radio"] .amoforms__fields__row__inner__name {
+  padding-top: 8px;
+}
+/* end of Name-Before styles */
+
+/* Submit */
+.amoforms .amoforms__fields .amoforms__fields__row__submit {
+  display: block;
+  border-style: solid;
+  border-color: transparent;
+  overflow: hidden;
+  border-width: 1px;
+  border-radius: 2px;
+  background: #7fcc8d;
+  box-shadow: 0.5px 0.866px 1px 0px rgba(0, 0, 0, 0.004), inset 0px -1px 0px 0px rgba(255, 255, 255, 0.23);
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: none;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+}
+.amoforms .amoforms__fields div.amoforms__fields__row__submit{
+  display: inline-block;
+  letter-spacing: normal;
+  word-spacing: normal;
+  align-items: flex-start;
+  text-align: center;
+  vertical-align: baseline;
+  text-rendering: geometricPrecision;
+  -webkit-font-smoothing: antialiased;
+}
+.amoforms .amoforms__fields__editor .amoforms__fields__row__submit{
+  cursor: auto;
+}
+.amoforms .amoforms__fields .amoforms__fields__row__submit:before {
+  content: "";
+  position: absolute;
+  top: -1px;
+  right: -1px;
+  bottom: -1px;
+  left: -1px;
+  z-index: -1;
+  box-shadow: inset 0 0 0 1px rgba(0,0,0,0.2);
+  background-color: inherit;
+  border-radius: 2px;
+  display: none;
+}
+/* end of Submit */
+
+/* Actions Buttons */
+.amoforms .amoforms__fields__editor__row__actions {
+  font-size: 13px;
+  font-family: "PT Sans", sans-serif !important;
+  font-weight: normal;
+  text-transform: none;
+  height: 25px;
+  color: #313942;
+  background: #fff;
+  position: absolute;
+  top: 9px;
+  right: 3px;
+  display: none;
+  line-height: 25px;
+  z-index: 2;
+  padding: 0 5px;
+  border-radius: 15px;
+}
+.amoforms .amoforms__fields__row__submit .amoforms__fields__editor__row__actions {
+  top: 0;
+  right: 6px;
+  padding: 0 10px;
+  border-radius: 2px;
+}
+
+.amoforms .amoforms__fields:not(.drag-sorting) .amoforms__fields__row:not(.amoforms__fields__row-submit):not(.in-edit):not(.drag-started).hover .amoforms__fields__editor__row__actions {
+  display: block;
+}
+.amoforms .amoforms__fields:not(.drag-sorting) .amoforms__fields__row.amoforms__fields__row-submit:not(.in-edit):not(.drag-started):hover .amoforms__fields__editor__row__actions {
+  display: inline-block;
+}
+
+.amoforms .amoforms__fields__editor__row__actions:after {
+  width: 100%;
+  height: 0;
+  visibility: hidden;
+  overflow: hidden;
+  content: '';
+  display: inline-block;
+}
+
+.amoforms .amoforms__fields__editor__row__actions__action {
+  display: inline-block;
+  cursor: pointer;
+  margin-right: 10px;
+  position: relative;
+}
+.amoforms .amoforms__fields__row.half .amoforms__fields__editor__row__actions__action {
+  font-size: 12px;
+  margin-right: 5px;
+}
+
+.amoforms .amoforms__fields__editor__row__actions__action:last-child {
+  margin-right: 0;
+}
+
+.amoforms .amoforms__fields__editor__row__actions__action:before {
+  content: '';
+  height: 15px;
+  width: 15px;
+  color: #fafafa;
+  display: inline-block;
+  background: url(../../images/main-form-sprite.png) no-repeat;
+  cursor: pointer;
+  margin-right: 2px;
+  vertical-align: middle;
+  margin-top: -5px;
+}
+
+.amoforms .amoforms__fields__editor__row__actions__action-edit:before {
+  background-position: 0 -1px;
+}
+
+.amoforms .amoforms__fields__editor__row__actions__action-duplicate:before {
+  background-position: -16px -1px;
+}
+
+.amoforms .half .amoforms__fields__editor__row__actions__action-duplicate {
+  display: none;
+}
+
+
+.amoforms .amoforms__fields__editor__row__actions__action-delete:before {
+  background-position: -30px -1px;
+}
+
+.amoforms .amoforms__fields__editor__row__actions__action:hover:after {
+  content: attr(data-text);
+  position: absolute;
+  left: 17px;
+  font-weight: bold;
+  z-index: 2;
+}
+/* end of Actions Buttons */
+
+.selectize-input .item {
+  background: #ffffff;
+}
+
+.amoforms .amoforms__fields__main {
+  padding-bottom: 38px;
+}
+
+.amoforms .amoforms__fields__row-submit {
+  margin: 20px;
+}
+
+input[type="text"] {
+  border-radius: 3px;
+}
+
+.amoforms_preview,
+.amoforms_form,
+.amoforms_email,
+.amoforms_account {
+  width: 780px;
+}
+
+.js-background-choose {
+  position: relative;
+}
+
+.js-background-clear {
+  height: 15px;
+  width: 15px;
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  z-index: 20;
+  visibility: hidden;
+  background: url(../../images/delete.png) no-repeat;
+}
+
+#wpcontent {
+  padding-left: 19px;
+}
+
+.amoforms .amoforms__form_calculations{
+  padding: 10px 10px;
+  font-weight: bold;
+}

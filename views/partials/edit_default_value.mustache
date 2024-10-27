@@ -1,0 +1,13 @@
+<div class="js-default-value-wrapper"
+    {{#is_system_mask}} style="display:none"{{/is_system_mask}}
+    {{#is_custom_mask}} style="display:none"{{/is_custom_mask}}
+>
+    <div class="amoforms__fields__edit__descr amoforms__fields__edit__descr-default-value">Default Value</div>
+    <input
+            type="text"
+            class="amoforms__text-input amoforms__fields__edit__input {{#is_number}}js-is-number{{/is_number}} {{#is_date}}js-is-date{{/is_date}} {{#is_email}}js-is-email{{/is_email}} {{#is_url}}js-is-url{{/is_url}}"
+            name="field[default_value]"
+            title="Default value"
+            value="{{field.default_value}}"
+    >
+</div>

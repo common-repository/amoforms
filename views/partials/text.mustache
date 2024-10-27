@@ -1,0 +1,28 @@
+<input
+        type="text"
+        class="amoforms__text-input amoforms_field_element {{#currency_mask}}amoforms-currency{{/currency_mask}} {{#is_url}}js-is-url{{/is_url}} {{#is_email}}js-is-email{{/is_email}} {{#field.required}}js-is-required{{/field.required}} {{#field.options.limit}}js-is-limited{{/field.options.limit}}"
+        name="fields[{{field_id}}]"
+        placeholder="{{#name_position_inside}}{{field.name}}{{/name_position_inside}}{{^name_position_inside}}{{^use_mask}}{{field.placeholder}}{{/use_mask}}{{#use_mask}}{{#currency_mask}}{{.}}{{/currency_mask}}{{^currency_mask}}{{#is_system_mask}}{{field.options.mask-system}}{{/is_system_mask}}{{#is_custom_mask}}{{field.options.mask-custom}}{{/is_custom_mask}}{{field.options.mask}}{{/currency_mask}}{{/use_mask}}{{/name_position_inside}}"
+        {{#use_mask}}
+        {{^currency_mask}}
+            {{#is_system_mask}}
+                data-mask="{{field.options.mask-system}}"
+            {{/is_system_mask}}
+            {{#is_custom_mask}}
+                data-mask="{{field.options.mask-custom}}"
+            {{/is_custom_mask}}
+        {{/currency_mask}}
+        {{#currency_mask}}
+            data-a-sign="{{currency_mask}} "
+        {{/currency_mask}}
+        {{/use_mask}}
+        value="{{field.default_value}}"
+        {{#field.options.noautofill}}
+        autocomplete="off"
+        readonly
+        onfocus="this.removeAttribute('readonly')"
+        {{/field.options.noautofill}}
+        {{#field.options.limit}}
+        maxlength="{{.}}"
+        {{/field.options.limit}}
+>

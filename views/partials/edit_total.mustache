@@ -1,0 +1,44 @@
+<div class="amoforms__fields__edit__row clearfix">
+    <div class="amoforms__fields__edit__row__left">
+        <div class="amoforms__fields__edit__descr amoforms__fields__edit__descr-total">Currency Symbol</div>
+        <input
+                type="text"
+                class="amoforms__text-input amoforms__fields__edit__input"
+                name="field[options][curr_symbol]"
+                title="Currency"
+                placeholder="{{#field.options.curr_symbol}}{{.}}{{/field.options.curr_symbol}}{{^field.options.curr_symbol}}${{/field.options.curr_symbol}}"
+                value="{{#field.options.curr_symbol}}{{.}}{{/field.options.curr_symbol}}"
+        >
+    </div>
+    <div class="amoforms__fields__edit__row__right">
+        <div class="amoforms__fields__edit__descr amoforms__fields__edit__descr-total">Currency Label Position</div>
+        <div class="amoforms__fields__edit__row__left__radios">
+            <label class="amoforms__radio__label">
+						<span class="amoforms__radio">
+							<input
+                                    type="radio"
+                                    name="field{{field_id}}[options][curr_position]"
+                                    title="Left"
+                                    value="0"
+                                    {{^field.options.curr_position}}checked="checked"{{/field.options.curr_position}}
+                            >
+							<b></b>
+						</span>
+                <b>Left</b>
+            </label>
+            <label class="amoforms__radio__label">
+						<span class="amoforms__radio">
+							<input
+                                    type="radio"
+                                    name="field{{field_id}}[options][curr_position]"
+                                    title="Right"
+                                    value="1"
+                                    {{#field.options.curr_position}}checked="checked"{{/field.options.curr_position}}
+                            >
+							<b></b>
+						</span>
+                <b>Right</b>
+            </label>
+        </div>
+    </div>
+</div>

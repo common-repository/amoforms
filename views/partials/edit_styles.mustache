@@ -1,0 +1,146 @@
+{{#field_style}}
+    {{#elements}}
+        <div class="amoforms__styles__expander">
+            {{#field_wrapper}}
+                <div class="amoforms__fields__expander__item">
+                    <div class="amoforms__fields__expander__item__head">
+                        <p class="amoforms__fields__expander__item__head__text">Field Wrapper</p>
+                    </div>
+
+                    <div class="amoforms__fields__expander__item__content">
+                        <div class="amoforms__fields__expander__item__content__inner">
+                            {{> style_field_wrapper }}
+                        </div>
+                    </div>
+                </div>
+            {{/field_wrapper}}
+            {{#field_element}}
+                <div class="amoforms__fields__expander__item">
+                    <div class="amoforms__fields__expander__item__head">
+                        <p class="amoforms__fields__expander__item__head__text">Field Element</p>
+                    </div>
+
+                    <div class="amoforms__fields__expander__item__content">
+                        <div class="amoforms__fields__expander__item__content__inner">
+                            {{> style_field_element }}
+                        </div>
+                    </div>
+                </div>
+            {{/field_element}}
+            {{#field_label}}
+                <div class="amoforms__fields__expander__item">
+                    <div class="amoforms__fields__expander__item__head">
+                        <p class="amoforms__fields__expander__item__head__text">Field Label</p>
+                    </div>
+
+                    <div class="amoforms__fields__expander__item__content">
+                        <div class="amoforms__fields__expander__item__content__inner">
+                            {{> style_field_label }}
+                        </div>
+                    </div>
+                </div>
+            {{/field_label}}
+            {{#radio_item_element}}
+                <div class="amoforms__fields__expander__item">
+                    <div class="amoforms__fields__expander__item__head">
+                        <p class="amoforms__fields__expander__item__head__text">Radio Item Element</p>
+                    </div>
+
+                    <div class="amoforms__fields__expander__item__content">
+                        <div class="amoforms__fields__expander__item__content__inner">
+                            {{> style_radio_item_element }}
+                        </div>
+                    </div>
+                </div>
+            {{/radio_item_element}}
+            {{#radio_item_label}}
+                <div class="amoforms__fields__expander__item">
+                    <div class="amoforms__fields__expander__item__head">
+                        <p class="amoforms__fields__expander__item__head__text">Radio Item Label</p>
+                    </div>
+
+                    <div class="amoforms__fields__expander__item__content">
+                        <div class="amoforms__fields__expander__item__content__inner">
+                            {{> style_radio_item_label }}
+                        </div>
+                    </div>
+                </div>
+            {{/radio_item_label}}
+            {{#radio_item}}
+                <div class="amoforms__fields__expander__item">
+                    <div class="amoforms__fields__expander__item__head">
+                        <p class="amoforms__fields__expander__item__head__text">Radio Item</p>
+                    </div>
+
+                    <div class="amoforms__fields__expander__item__content">
+                        <div class="amoforms__fields__expander__item__content__inner">
+                            {{> style_radio_item }}
+                        </div>
+                    </div>
+                </div>
+            {{/radio_item}}
+            {{#radio_item_selected}}
+                <div class="amoforms__fields__expander__item">
+                    <div class="amoforms__fields__expander__item__head">
+                        <p class="amoforms__fields__expander__item__head__text">Radio Inside Selected</p>
+                    </div>
+
+                    <div class="amoforms__fields__expander__item__content">
+                        <div class="amoforms__fields__expander__item__content__inner">
+                            {{> style_radio_item_selected }}
+                        </div>
+                    </div>
+                </div>
+            {{/radio_item_selected}}
+            {{#rating_star}}
+                <div class="amoforms__fields__expander__item">
+                    <div class="amoforms__fields__expander__item__head">
+                        <p class="amoforms__fields__expander__item__head__text">Rating Star</p>
+                    </div>
+
+                    <div class="amoforms__fields__expander__item__content">
+                        <div class="amoforms__fields__expander__item__content__inner">
+                            {{> style_rating_star }}
+                        </div>
+                    </div>
+                </div>
+            {{/rating_star}}
+            {{#rating_star_hover}}
+                <div class="amoforms__fields__expander__item">
+                    <div class="amoforms__fields__expander__item__head">
+                        <p class="amoforms__fields__expander__item__head__text">Rating Star Hover</p>
+                    </div>
+
+                    <div class="amoforms__fields__expander__item__content">
+                        <div class="amoforms__fields__expander__item__content__inner">
+                            {{> style_rating_star_hover }}
+                        </div>
+                    </div>
+                </div>
+            {{/rating_star_hover}}
+            {{#rating_star_select}}
+                <div class="amoforms__fields__expander__item">
+                    <div class="amoforms__fields__expander__item__head">
+                        <p class="amoforms__fields__expander__item__head__text">Rating Star Selected</p>
+                    </div>
+
+                    <div class="amoforms__fields__expander__item__content">
+                        <div class="amoforms__fields__expander__item__content__inner">
+                            {{> style_rating_star_select }}
+                        </div>
+                    </div>
+                </div>
+            {{/rating_star_select}}
+        </div>
+    {{/elements}}
+    <div class="amoforms__checkbox-control amoforms__style_type">
+        <label>
+            <span>
+                <input type="checkbox" class="amoforms__style_type_checker" name="style[is_type_style]" {{#field_style.is_type_style}}checked{{/field_style.is_type_style}} value="{{field_style.is_type_style}}">
+            </span>
+        </label>
+        <label class="amoforms__fields__edit__descr-label">
+            <i>Use this style for all fields of type «{{field_style.type}}»?</i>
+        </label>
+    </div>
+{{/field_style}}

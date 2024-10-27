@@ -1,0 +1,209 @@
+.amoforms .selectize-control {
+  position: relative;
+}
+.amoforms .selectize-control:before {
+  content: "";
+  position: absolute;
+  width: 33px;
+  background-repeat: no-repeat;
+  right: 1px;
+  top: 1px;
+  pointer-events: none;
+  bottom: 1px;
+  background-color: #fff;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJ4TWlkWU1pZCIgd2lkdGg9IjciIGhlaWdodD0iMTEiIHZpZXdCb3g9IjAgMCA3IDExIj48cGF0aCBmaWxsPSIjMzg0ODU1IiBkPSJNMy41MTIsMC4wMDAgTDcuMDAwLDMuOTM4IEwwLjAwMCw0LjAwMCBMMy41MTIsMC4wMDAgWk0zLjUxMiwxMS4wMDAgTDAuMDAwLDcuMDAwIEw3LjAwMCw3LjA2MiBMMy41MTIsMTEuMDAwIFoiIGNsYXNzPSJjbHMtMSIvPjwvc3ZnPg==);
+  background-position: center center;
+  z-index: 2;
+}
+.amoforms .selectize-input,
+.amoforms .selectize-control.single .selectize-input.input-active {
+  background: #ffffff;
+  cursor: text;
+}
+.amoforms .selectize-input {
+  border: 1px solid rgb(212, 213, 216);
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  padding: 0 10px;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+.amoforms .selectize-input.focus {
+  border: 1px solid #2e9fe3;
+  box-shadow: 0px 0px 5px 0px rgba(46, 159, 227, 0.4);
+}
+.amoforms .selectize-input.focus + .selectize-dropdown {
+  border: 1px solid #2e9fe3;
+  border-top: 1px solid rgb(212, 213, 216);
+  box-shadow: 0px 1px 4px 0px rgba(46, 159, 227, 0.3);
+}
+.amoforms .selectize-control:not(.multi) .selectize-input {
+  line-height: 40px;
+}
+.amoforms .selectize-control.multi .selectize-input {
+  min-height: 42px;
+  padding: 0 4px 4px 4px;
+}
+.amoforms .selectize-input.full {
+  background-color: #ffffff;
+}
+.amoforms .selectize-input.disabled,
+.amoforms .selectize-input.disabled * {
+  cursor: default !important;
+}
+.amoforms .selectize-input.dropdown-active {
+  -webkit-border-radius: 3px 3px 0 0;
+  -moz-border-radius: 3px 3px 0 0;
+  border-radius: 3px 3px 0 0;
+}
+.amoforms .selectize-input > * {
+  vertical-align: baseline;
+  display: -moz-inline-stack;
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+}
+.amoforms .selectize-control.multi .selectize-input > div {
+  cursor: pointer;
+  margin: 4px 4px 0px 0;
+  padding: 1px 7px;
+  background: #fff;
+  border: 1px solid rgb(212, 213, 216);
+  line-height: 28px;
+  border-radius: 3px;
+}
+.amoforms .selectize-control.multi .selectize-input > div.active {
+  border: 1px solid #9ca4ab;
+}
+.amoforms .selectize-control.multi .selectize-input.disabled > div,
+.amoforms .selectize-control.multi .selectize-input.disabled > div.active {
+  color: #7d7d7d;
+  background: #ffffff;
+  border: 0 solid #ffffff;
+}
+.amoforms .selectize-input > input {
+  display: inline-block !important;
+  padding: 0 !important;
+  min-height: 0 !important;
+  max-height: none !important;
+  max-width: 100% !important;
+  margin: 0 2px 0 0 !important;
+  text-indent: 0 !important;
+  border: 0 none !important;
+  background: none !important;
+  line-height: inherit !important;
+  -webkit-user-select: auto !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+}
+.amoforms .selectize-control.multi .selectize-input > input {
+  margin-top: 10px!important;
+}
+.amoforms .selectize-control.multi .selectize-input > input:first-child {
+  margin-left: 6px !important;
+}
+.amoforms .selectize-input > input::-ms-clear {
+  display: none;
+}
+.amoforms .selectize-input > input:focus {
+  outline: none !important;
+}
+.amoforms .selectize-input::after {
+  content: ' ';
+  display: block;
+  clear: left;
+}
+.amoforms .selectize-dropdown {
+  position: absolute;
+  z-index: 10;
+  border: 1px solid rgb(212, 213, 216);
+  background: #ffffff;
+  margin: -1px 0 0 0;
+  -webkit-border-radius: 0 0 3px 3px;
+  -moz-border-radius: 0 0 3px 3px;
+  border-radius: 0 0 3px 3px;
+}
+.amoforms .selectize-dropdown [data-selectable] {
+  cursor: pointer;
+  overflow: hidden;
+}
+.amoforms .selectize-dropdown [data-selectable] .highlight {
+  background: rgba(125, 168, 208, 0.2);
+  -webkit-border-radius: 1px;
+  -moz-border-radius: 1px;
+  border-radius: 1px;
+}
+.amoforms .selectize-dropdown [data-selectable],
+.amoforms .selectize-dropdown .optgroup-header {
+  line-height: 41px;
+  border-top: 1px solid rgb(212, 213, 216);
+  padding: 0 10px;
+}
+.amoforms .selectize-dropdown [data-selectable]:first-child {
+  border-top: 0;
+}
+.amoforms .selectize-dropdown .optgroup:first-child .optgroup-header {
+  border-top: 0 none;
+}
+.amoforms .selectize-dropdown .optgroup-header {
+  color: #303030;
+  background: #ffffff;
+  cursor: default;
+}
+.amoforms .selectize-dropdown .active {
+  background-color: #f7fbff;
+}
+.amoforms .selectize-dropdown .active.create {
+  color: #495c68;
+}
+.amoforms .selectize-dropdown .create {
+  color: rgba(48, 48, 48, 0.5);
+}
+.amoforms .selectize-dropdown-content {
+  overflow-y: auto;
+  overflow-x: hidden;
+  max-height: 209px;
+}
+.amoforms .selectize-control.single .selectize-input,
+.amoforms .selectize-control.single .selectize-input input {
+  cursor: pointer;
+}
+.amoforms .selectize-control.single .selectize-input.input-active,
+.amoforms .selectize-control.single .selectize-input.input-active input {
+  cursor: text;
+}
+.amoforms .selectize-control.single .selectize-input:after {
+  content: ' ';
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  margin-top: -3px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 5px 5px 0 5px;
+  border-color: #808080 transparent transparent transparent;
+}
+.amoforms .selectize-control.single .selectize-input.dropdown-active:after {
+  margin-top: -4px;
+  border-width: 0 5px 5px 5px;
+  border-color: transparent transparent #808080 transparent;
+}
+.amoforms .selectize-control.rtl.single .selectize-input:after {
+  left: 15px;
+  right: auto;
+}
+.amoforms .selectize-control.rtl .selectize-input > input {
+  margin: 0 4px 0 -2px !important;
+}
+.amoforms .selectize-control .selectize-input.disabled {
+  opacity: 0.5;
+  background-color: #fafafa;
+}

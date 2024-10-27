@@ -1,0 +1,143 @@
+<div class="amoforms__fields__edit__row clearfix">
+	<div class="amoforms__fields__edit__row__left">
+		<div class="amoforms__fields__edit__descr">Description Position</div>
+		<div class="amoforms__fields__edit__row__left__radios">
+			<label class="amoforms__radio__label">
+				<span class="amoforms__radio">
+					<input 
+						type="radio"
+						name="field{{field_id}}[description_position]"
+						title="After input"
+						value="{{consts.pos_after}}"
+						{{#is_pos_after}}checked="checked"{{/is_pos_after}}
+						>
+					<b></b>
+				</span>
+				<b>After input</b>
+			</label>
+			<label class="amoforms__radio__label">
+				<span class="amoforms__radio">
+					<input
+						type="radio"
+						name="field{{field_id}}[description_position]"
+						title="Before input"
+						value="{{consts.pos_before}}"
+						{{^is_pos_after}}checked="checked"{{/is_pos_after}}
+						>
+					<b></b>
+				</span>
+				<b>Before input</b>
+			</label>
+		</div>
+
+        {{#is_name}}{{> edit_noautofill }}{{/is_name}}
+        {{#is_email}}{{> edit_noautofill }}{{/is_email}}
+        {{#is_phone}}{{> edit_noautofill }}{{/is_phone}}
+        {{#is_company}}{{> edit_noautofill }}{{/is_company}}
+        {{#is_text}}{{> edit_noautofill }}{{/is_text}}
+        {{#is_url}}{{> edit_noautofill }}{{/is_url}}
+        {{#is_number}}{{> edit_noautofill }}{{/is_number}}
+        {{#is_address}}{{> edit_noautofill }}{{/is_address}}
+        {{#is_date}}{{> edit_noautofill }}{{/is_date}}
+
+		{{#is_name}}{{> edit_default_value }}{{/is_name}}
+		{{#is_email}}{{> edit_default_value }}{{/is_email}}
+		{{#is_phone}}{{> edit_default_value }}{{/is_phone}}
+		{{#is_company}}{{> edit_default_value }}{{/is_company}}
+		{{#is_text}}{{> edit_default_value }}{{/is_text}}
+		{{#is_url}}{{> edit_default_value }}{{/is_url}}
+		{{#is_number}}{{> edit_default_value }}{{> edit_placeholder }}{{/is_number}}
+		{{#is_textarea}}{{> edit_default_value }}{{/is_textarea}}
+		{{#is_address}}{{> edit_default_value }}{{/is_address}}
+		{{#is_date}}{{> edit_default_value }}{{/is_date}}
+		{{#is_heading}}{{> edit_default_value }}{{/is_heading}}
+		{{#is_file}}{{> edit_label }}{{/is_file}}
+	</div>
+
+	<div class="amoforms__fields__edit__row__right">
+		<div class="amoforms__fields__edit__descr">Required</div>
+		<div class="amoforms__fields__edit__row__left__radios">
+			<label class="amoforms__radio__label">
+				<span class="amoforms__radio">
+					<input
+						type="radio"
+						name="field{{field_id}}[required]"
+						title="Required"
+						value="1"
+						{{#field.required}}checked="checked"{{/field.required}}
+						>
+					<b></b>
+				</span>
+				<b>Yes</b>
+			</label>
+			<label class="amoforms__radio__label">
+				<span class="amoforms__radio">
+					<input
+						type="radio"
+						name="field{{field_id}}[required]"
+						title="Required"
+						value="0"
+						{{^field.required}}checked="checked"{{/field.required}}
+						>
+					<b></b>
+				</span>
+				<b>No</b>
+			</label>
+		</div>
+
+        {{#is_number}}
+            <div class="amoforms__fields__edit__descr amoforms__fields__edit__descr-autototal">Include in the auto-total?</div>
+            <div class="amoforms__fields__edit__row__left__radios">
+                <label class="amoforms__radio__label">
+                    <span class="amoforms__radio">
+                        <input
+                                type="radio"
+                                name="field{{field_id}}[options][calculation]"
+                                title="Required"
+                                value="1"
+                                {{#field.options.calculation}}checked="checked"{{/field.options.calculation}}
+                        >
+                        <b></b>
+                    </span>
+                    <b>Yes</b>
+                </label>
+                <label class="amoforms__radio__label">
+                    <span class="amoforms__radio">
+                        <input
+                                type="radio"
+                                name="field{{field_id}}[options][calculation]"
+                                title="Required"
+                                value="0"
+                                {{^field.options.calculation}}checked="checked"{{/field.options.calculation}}
+                        >
+                        <b></b>
+                    </span>
+                    <b>No</b>
+                </label>
+            </div>
+        {{/is_number}}
+
+        {{#is_name}}{{> edit_limit }}{{/is_name}}
+        {{#is_email}}{{> edit_limit }}{{/is_email}}
+        {{#is_phone}}{{> edit_limit }}{{/is_phone}}
+        {{#is_company}}{{> edit_limit }}{{/is_company}}
+        {{#is_text}}{{> edit_limit }}{{/is_text}}
+        {{#is_url}}{{> edit_limit }}{{/is_url}}
+        {{#is_number}}{{> edit_limit }}{{/is_number}}
+        {{#is_address}}{{> edit_limit }}{{/is_address}}
+        {{#is_date}}{{> edit_limit }}{{/is_date}}
+
+		{{#is_name}}{{> edit_placeholder }}{{/is_name}}
+		{{#is_email}}{{> edit_placeholder }}{{/is_email}}
+		{{#is_phone}}{{> edit_placeholder }}{{/is_phone}}
+		{{#is_company}}{{> edit_placeholder }}{{/is_company}}
+		{{#is_text}}{{> edit_placeholder }}{{/is_text}}
+		{{#is_url}}{{> edit_placeholder }}{{/is_url}}
+		{{#is_textarea}}{{> edit_placeholder }}{{/is_textarea}}
+		{{#is_address}}{{> edit_placeholder }}{{/is_address}}
+		{{#is_date}}{{> edit_placeholder }}{{/is_date}}
+		{{#is_heading}}{{> edit_placeholder }}{{/is_heading}}
+        {{#is_city}}{{> edit_placeholder }}{{/is_city}}
+		{{#is_file}}{{> edit_filesize }}{{/is_file}}
+	</div>
+</div>

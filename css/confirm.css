@@ -1,0 +1,51 @@
+.amoforms__confirm {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 9999;
+}
+.amoforms .amoforms__confirm__overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+}
+.amoforms .amoforms__confirm__inner {
+  background: #fff;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  padding: 15px 0 15px 60px;
+  margin-left: -20px;
+
+  -webkit-transform: translateY(100%);
+  -ms-transform: translateY(100%);
+  -o-transform: translateY(100%);
+  transform: translateY(100%);
+
+  -webkit-transition: -webkit-transform .1s;
+  -o-transition: -o-transform .1s;
+  transition: transform .1s;
+
+  border-top: 1px solid #d4d5d8;
+  border-bottom: 1px solid #d4d5d8;
+  box-shadow: 0px -7px 10px 0px rgba(0, 0, 0, 0.05);
+}
+
+.amoforms.amoforms__confirm.active .amoforms__confirm__inner {
+  -webkit-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0);
+}
+
+.amoforms .amoforms__confirm__caption {
+  margin-bottom: 15px;
+  font-size: 18px;
+}
